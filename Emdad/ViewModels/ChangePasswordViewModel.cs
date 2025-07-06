@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Emdad.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace Emdad.ViewModels
 {
@@ -22,5 +23,10 @@ namespace Emdad.ViewModels
         [Display(Name = "Confirm New Password")]
         [Compare("NewPassword", ErrorMessage = "New password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+
+        public List<Models.CitizensSettings> ListCitizensSettings { get; set; }
+
+
     }
 }

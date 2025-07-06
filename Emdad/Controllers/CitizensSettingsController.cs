@@ -10,46 +10,102 @@ using Emdad.Models.Repositories;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Emdad.ViewModels;
+using Microsoft.AspNetCore.Identity;
 
 namespace Emdad.Controllers
 {
     [Authorize(Roles = "Citizen")]
 
     public class CitizensSettingsController : Controller
+
     {
+        private readonly UserManager<IdentityUser> UserManager;
+        private readonly SignInManager<IdentityUser> SignInManager;
         private readonly EmdadContext context;
         public IRepository<Citizen> Citizen { get; }
+        public IRepository<CitizensSettings> CitizensSettings { get; }
+
         private readonly PasswordService passwordService;
 
 
         public CitizensSettingsController(EmdadContext _context,
             IRepository<Citizen> _Citizen,
-            PasswordService _passwordService)
+            PasswordService _passwordService,
+            IRepository<CitizensSettings> _CitizensSettings,
+            UserManager<IdentityUser> _UserManager,
+            SignInManager<IdentityUser> _SignInManager)
         {
             context = _context;
             Citizen = _Citizen;
             passwordService = _passwordService;
+            CitizensSettings = _CitizensSettings;
+            UserManager = _UserManager;
+            SignInManager = _SignInManager;
         }
 
         // GET: CitizensSettings
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-            var citizen = await context.Citizen.FirstOrDefaultAsync(c => c.CreateId == userId);
-
-            // Optional: Handle if user/citizen is null
-            if (citizen == null)
+            var citizen = context.Citizen.FirstOrDefault(c => c.CreateId == userId);
+            var data = new ChangePasswordViewModel
             {
-                return NotFound("Citizen not found.");
+                ListCitizensSettings = CitizensSettings.ViewClient()
+                     .Where(s => s.CitizenNationalId == citizen.CitizenNationalId)
+                     .ToList(),
+                CitizenId = citizen.CitizenNationalId
+            };
+            return View(data);
+        }
+        // GET: /CitizensSettings/ChangePassword
+        [HttpGet]
+        public async Task<IActionResult> ChangePassword()
+        {
+            var user = await UserManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return NotFound($"Unable to load user with ID '{UserManager.GetUserId(User)}'.");
             }
 
-            ViewBag.CitizenNationalId = citizen.CitizenNationalId;
-            ViewBag.CitizenEmail = citizen.CitizenEmail;
+            var model = new ChangePasswordViewModel
+            {
+                CitizenId = user.Id // Or another unique identifier like NationalId
+            };
+            return View(model);
+        }
+
+
+        // POST: /CitizensSettings/ChangePassword
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ChangePassword(ChangePasswordViewModel model)
+        {
             
 
-            var settings = await context.CitizensSettings.ToListAsync();
-            return View(settings);
+            // It's more secure to get the user from the current context rather than the model's CitizenId
+            var user = await UserManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return NotFound($"Unable to load user with ID '{UserManager.GetUserId(User)}'.");
+            }
+
+            var changePasswordResult = await UserManager.ChangePasswordAsync(user, model.CurrentPassword, model.NewPassword);
+
+            if (!changePasswordResult.Succeeded)
+            {
+                foreach (var error in changePasswordResult.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+                return View(model);
+            }
+
+            await SignInManager.RefreshSignInAsync(user);
+            // Add a success message to display to the user
+            TempData["StatusMessage"] = "Your password has been changed successfully.";
+
+            return RedirectToAction(); // Redirect back to the same page or a confirmation page
         }
         //[HttpGet]
         //public IActionResult ChangePassword()

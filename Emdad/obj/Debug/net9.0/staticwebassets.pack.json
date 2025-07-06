@@ -37,256 +37,16 @@
       "PackagePath": "staticwebassets\\assets\\Images\\video2.mp4"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Admin\\categories.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Admin\\categories.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Admin\\dashboard.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Admin\\dashboard.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Admin\\edit.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Admin\\edit.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Admin\\loginAdmin.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Admin\\loginAdmin.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Admin\\loginAdmin_agriculture.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Admin\\loginAdmin_agriculture.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Admin\\loginAdmin_enegry.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Admin\\loginAdmin_enegry.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Admin\\loginAdmin_public.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Admin\\loginAdmin_public.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Admin\\loginAdmin_traffic.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Admin\\loginAdmin_traffic.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Admin\\loginAdmin_water.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Admin\\loginAdmin_water.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Admin\\loginSuperAdmin.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Admin\\loginSuperAdmin.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Admin\\manage_Energy.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Admin\\manage_Energy.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Admin\\manage_agriculture.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Admin\\manage_agriculture.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Admin\\manage_publics.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Admin\\manage_publics.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Admin\\manage_traffic.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Admin\\manage_traffic.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Admin\\manage_water.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Admin\\manage_water.html"
-    },
-    {
       "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Admin\\nav.js",
       "PackagePath": "staticwebassets\\assets\\dist\\Admin\\nav.js"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Agricultur_Sector\\Irrigation_water_pollution.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Agricultur_Sector\\Irrigation_water_pollution.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Agricultur_Sector\\Use_of_banned_pesticides.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Agricultur_Sector\\Use_of_banned_pesticides.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Agricultur_Sector\\agricultural_pesticides_request.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Agricultur_Sector\\agricultural_pesticides_request.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Agricultur_Sector\\agricultural_well_request.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Agricultur_Sector\\agricultural_well_request.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Agricultur_Sector\\farmer_support_request.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Agricultur_Sector\\farmer_support_request.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Agricultur_Sector\\farming_license.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Agricultur_Sector\\farming_license.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Agricultur_Sector\\farming_tools_vehicles.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Agricultur_Sector\\farming_tools_vehicles.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Agricultur_Sector\\interruption_of_irrigation_water.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Agricultur_Sector\\interruption_of_irrigation_water.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Agricultur_Sector\\pest_disease_control.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Agricultur_Sector\\pest_disease_control.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Energy&electricity_services.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Energy&electricity_services.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Energy_forms\\electricity-bill-inquiry.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Energy_forms\\electricity-bill-inquiry.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Energy_forms\\electricity-bill-payment.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Energy_forms\\electricity-bill-payment.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Energy_forms\\energy-efficiency-certificate.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Energy_forms\\energy-efficiency-certificate.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Energy_forms\\relocate-electricity-meter.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Energy_forms\\relocate-electricity-meter.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Energy_forms\\repair-electricity-meter.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Energy_forms\\repair-electricity-meter.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Energy_forms\\repair-electricity-pole.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Energy_forms\\repair-electricity-pole.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Energy_forms\\report-electricity-theft.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Energy_forms\\report-electricity-theft.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Energy_forms\\report-meter-installation-delay.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Energy_forms\\report-meter-installation-delay.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Energy_forms\\request-electricity-pole.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Energy_forms\\request-electricity-pole.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Energy_forms\\request-power-line-rerouting.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Energy_forms\\request-power-line-rerouting.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Energy_forms\\request-solar-energy-system.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Energy_forms\\request-solar-energy-system.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Energy_forms\\three-phase-electricity-connection.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Energy_forms\\three-phase-electricity-connection.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Traffic_forms\\add-traffic-roundabout.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Traffic_forms\\add-traffic-roundabout.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Traffic_forms\\add-traffic-signal.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Traffic_forms\\add-traffic-signal.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Traffic_forms\\appeal-traffic-violation.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Traffic_forms\\appeal-traffic-violation.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Traffic_forms\\pay-traffic-violation.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Traffic_forms\\pay-traffic-violation.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Traffic_forms\\repair-traffic-roundabout.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Traffic_forms\\repair-traffic-roundabout.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Traffic_forms\\repair-traffic-signal.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Traffic_forms\\repair-traffic-signal.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Traffic_forms\\report-stolen-vehicle.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Traffic_forms\\report-stolen-vehicle.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Traffic_forms\\traffic-violation-inquiry.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Traffic_forms\\traffic-violation-inquiry.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Water_Sector\\add-water-extensions.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Water_Sector\\add-water-extensions.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Water_Sector\\inquire-water-bill.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Water_Sector\\inquire-water-bill.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Water_Sector\\pay-water-bill.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Water_Sector\\pay-water-bill.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Water_Sector\\relocate-water-meter.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Water_Sector\\relocate-water-meter.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Water_Sector\\report-agriculture-water-usage.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Water_Sector\\report-agriculture-water-usage.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Water_Sector\\report-bill-issue.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Water_Sector\\report-bill-issue.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Water_Sector\\report-pipe-break.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Water_Sector\\report-pipe-break.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Water_Sector\\report-water-theft.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Water_Sector\\report-water-theft.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Water_Sector\\request-new-water-meter.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Water_Sector\\request-new-water-meter.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Water_Sector\\request-smart-irrigation.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Water_Sector\\request-smart-irrigation.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\Water_Sector\\request-water-tank.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\Water_Sector\\request-water-tank.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\agriculture_service.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\agriculture_service.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\categories.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\categories.html"
     },
     {
       "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\contact.js",
       "PackagePath": "staticwebassets\\assets\\dist\\contact.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\dashboard.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\dashboard.html"
-    },
-    {
       "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\david-ai.min.js",
       "PackagePath": "staticwebassets\\assets\\dist\\david-ai.min.js"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\home_page.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\home_page.html"
     },
     {
       "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\jquery-3.7.1.min.js",
@@ -301,50 +61,6 @@
       "PackagePath": "staticwebassets\\assets\\dist\\owl.carousel.min.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\profile_settings.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\profile_settings.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\pub_services_forms\\Parking_Planning.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\pub_services_forms\\Parking_Planning.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\pub_services_forms\\Request_street_lighting.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\pub_services_forms\\Request_street_lighting.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\pub_services_forms\\Road_Asphalting.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\pub_services_forms\\Road_Asphalting.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\pub_services_forms\\Sewage_Problem.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\pub_services_forms\\Sewage_Problem.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\pub_services_forms\\Sewage_Service_Request.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\pub_services_forms\\Sewage_Service_Request.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\pub_services_forms\\Sidewalk_Installation_Request.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\pub_services_forms\\Sidewalk_Installation_Request.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\pub_services_forms\\Sidewalk_Repair.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\pub_services_forms\\Sidewalk_Repair.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\pub_services_forms\\Street_Lighting_Issue.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\pub_services_forms\\Street_Lighting_Issue.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\pub_services_forms\\cracks.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\pub_services_forms\\cracks.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\publics_services.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\publics_services.html"
-    },
-    {
       "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\report_home.js",
       "PackagePath": "staticwebassets\\assets\\dist\\report_home.js"
     },
@@ -357,20 +73,8 @@
       "PackagePath": "staticwebassets\\assets\\dist\\template_home.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\template_pages.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\template_pages.html"
-    },
-    {
       "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\template_pages.js",
       "PackagePath": "staticwebassets\\assets\\dist\\template_pages.js"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\traffic_department.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\traffic_department.html"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\water_service.html",
-      "PackagePath": "staticwebassets\\assets\\dist\\water_service.html"
     },
     {
       "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\package-lock.json",
@@ -383,10 +87,6 @@
     {
       "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\signin&signup\\main.js",
       "PackagePath": "staticwebassets\\assets\\signin&signup\\main.js"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\signin&signup\\signin&signup.html",
-      "PackagePath": "staticwebassets\\assets\\signin&signup\\signin&signup.html"
     },
     {
       "Id": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\signin&signup\\style.css",

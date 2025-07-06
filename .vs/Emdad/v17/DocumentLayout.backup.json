@@ -3,136 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\views\\citizenssettings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\views\\citizenssettings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\controllers\\citizenssettingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\controllers\\citizenssettingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\models\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\models\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\areas\\admin\\viewmodels\\homemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\areas\\admin\\viewmodels\\homemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\wwwroot\\assets\\dist\\template_pages.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\wwwroot\\assets\\dist\\template_pages.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\wwwroot\\assets\\dist\\template_home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\wwwroot\\assets\\dist\\template_home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\viewmodels\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\viewmodels\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Migrations\\20250705143607_second.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Emdad\\Migrations\\20250705143607_second.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\viewmodels\\homemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\viewmodels\\homemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\views\\citizenssettings\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\views\\citizenssettings\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\views\\citizenssettings\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\views\\citizenssettings\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\views\\citizenssettings\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\views\\citizenssettings\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\models\\citizenssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\models\\citizenssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\models\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\models\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\data\\emdadcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\data\\emdadcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\views\\citizenssettings\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\views\\citizenssettings\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\controllers\\submissiondatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\controllers\\submissiondatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\models\\submission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\models\\submission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\areas\\admin\\views\\home\\submissiondetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\areas\\admin\\views\\home\\submissiondetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\areas\\admin\\views\\adminaccount\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\areas\\admin\\views\\adminaccount\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\models\\repositories\\citizenssettingsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\models\\repositories\\citizenssettingsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\models\\repositories\\sectorsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\models\\repositories\\sectorsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\models\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\models\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\models\\feedbackandsuggestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\models\\feedbackandsuggestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\views\\citizenssettings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\views\\citizenssettings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\models\\publicsubmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\models\\publicsubmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\viewmodels\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\viewmodels\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\views\\account\\registerandlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\views\\account\\registerandlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\areas\\admin\\views\\admin\\adminmanage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\areas\\admin\\views\\admin\\adminmanage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\areas\\admin\\views\\home\\managesector.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\areas\\admin\\views\\home\\managesector.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\viewmodels\\homemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\viewmodels\\homemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\areas\\admin\\controllers\\adminaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\areas\\admin\\controllers\\adminaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|c:\\users\\admin\\onedrive - university of jordan\\university\\software\\project_add features\\emdad-backend\\emdad\\emdad\\models\\citizenssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41ECF150-F44B-4EC3-9DD9-39A05B01ECA2}|Emdad\\Emdad.csproj|solutionrelative:emdad\\models\\citizenssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -142,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -174,28 +78,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Views\\CitizensSettings\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Emdad\\Views\\CitizensSettings\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Views\\CitizensSettings\\Delete.cshtml",
-              "RelativeToolTip": "Emdad\\Views\\CitizensSettings\\Delete.cshtml",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Emdad\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Emdad\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-06T08:49:08.82Z",
+              "WhenOpened": "2025-07-06T11:59:21.676Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Views\\CitizensSettings\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Emdad\\Views\\CitizensSettings\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Views\\CitizensSettings\\Edit.cshtml",
-              "RelativeToolTip": "Emdad\\Views\\CitizensSettings\\Edit.cshtml",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAABIAAAA8AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Views\\CitizensSettings\\Index.cshtml",
+              "RelativeDocumentMoniker": "Emdad\\Views\\CitizensSettings\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Views\\CitizensSettings\\Index.cshtml",
+              "RelativeToolTip": "Emdad\\Views\\CitizensSettings\\Index.cshtml",
+              "ViewState": "AgIAANcAAAAAAAAAAAAiwAEBAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-06T08:47:57.283Z",
+              "WhenOpened": "2025-07-06T11:57:44.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CitizensSettingsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Models\\Repositories\\CitizensSettingsRepository.cs",
+              "RelativeDocumentMoniker": "Emdad\\Models\\Repositories\\CitizensSettingsRepository.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Models\\Repositories\\CitizensSettingsRepository.cs",
+              "RelativeToolTip": "Emdad\\Models\\Repositories\\CitizensSettingsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T11:55:52.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChangePasswordViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\ViewModels\\ChangePasswordViewModel.cs",
+              "RelativeDocumentMoniker": "Emdad\\ViewModels\\ChangePasswordViewModel.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\ViewModels\\ChangePasswordViewModel.cs",
+              "RelativeToolTip": "Emdad\\ViewModels\\ChangePasswordViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T11:52:54.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeModel.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\ViewModels\\HomeModel.cs",
+              "RelativeDocumentMoniker": "Emdad\\ViewModels\\HomeModel.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\ViewModels\\HomeModel.cs",
+              "RelativeToolTip": "Emdad\\ViewModels\\HomeModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T11:52:37.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Emdad\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Emdad\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAkwF0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T11:48:15.993Z",
               "EditorCaption": ""
             },
             {
@@ -206,399 +162,35 @@
               "RelativeDocumentMoniker": "Emdad\\Models\\PasswordService.cs",
               "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Models\\PasswordService.cs",
               "RelativeToolTip": "Emdad\\Models\\PasswordService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAkwCYAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T08:24:01.888Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ChangePasswordViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\ViewModels\\ChangePasswordViewModel.cs",
-              "RelativeDocumentMoniker": "Emdad\\ViewModels\\ChangePasswordViewModel.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\ViewModels\\ChangePasswordViewModel.cs",
-              "RelativeToolTip": "Emdad\\ViewModels\\ChangePasswordViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T08:18:17.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Submission.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Models\\Submission.cs",
-              "RelativeDocumentMoniker": "Emdad\\Models\\Submission.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Models\\Submission.cs",
-              "RelativeToolTip": "Emdad\\Models\\Submission.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T16:49:45.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Views\\CitizensSettings\\Details.cshtml",
-              "RelativeDocumentMoniker": "Emdad\\Views\\CitizensSettings\\Details.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Views\\CitizensSettings\\Details.cshtml",
-              "RelativeToolTip": "Emdad\\Views\\CitizensSettings\\Details.cshtml",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-05T15:54:06.357Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Views\\CitizensSettings\\Create.cshtml",
-              "RelativeDocumentMoniker": "Emdad\\Views\\CitizensSettings\\Create.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Views\\CitizensSettings\\Create.cshtml",
-              "RelativeToolTip": "Emdad\\Views\\CitizensSettings\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-05T15:11:43.72Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "template_pages.js",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\template_pages.js",
-              "RelativeDocumentMoniker": "Emdad\\wwwroot\\assets\\dist\\template_pages.js",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\template_pages.js",
-              "RelativeToolTip": "Emdad\\wwwroot\\assets\\dist\\template_pages.js",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-05T14:58:16.327Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "template_home.js",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\template_home.js",
-              "RelativeDocumentMoniker": "Emdad\\wwwroot\\assets\\dist\\template_home.js",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\wwwroot\\assets\\dist\\template_home.js",
-              "RelativeToolTip": "Emdad\\wwwroot\\assets\\dist\\template_home.js",
-              "ViewState": "AgIAACMAAAAAAAAAAAAQwDoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-05T14:57:55.238Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Emdad\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Emdad\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAwBIAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T14:56:52.466Z",
+              "WhenOpened": "2025-07-06T11:47:37.286Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Views\\CitizensSettings\\Index.cshtml",
-              "RelativeDocumentMoniker": "Emdad\\Views\\CitizensSettings\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Views\\CitizensSettings\\Index.cshtml",
-              "RelativeToolTip": "Emdad\\Views\\CitizensSettings\\Index.cshtml",
-              "ViewState": "AgIAAMkAAAAAAAAAAAAAAAMBAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-05T14:41:55.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "20250705143607_second.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Migrations\\20250705143607_second.cs",
-              "RelativeDocumentMoniker": "Emdad\\Migrations\\20250705143607_second.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Migrations\\20250705143607_second.cs",
-              "RelativeToolTip": "Emdad\\Migrations\\20250705143607_second.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T14:36:08.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "CitizensSettingsController.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Controllers\\CitizensSettingsController.cs",
               "RelativeDocumentMoniker": "Emdad\\Controllers\\CitizensSettingsController.cs",
               "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Controllers\\CitizensSettingsController.cs",
               "RelativeToolTip": "Emdad\\Controllers\\CitizensSettingsController.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAcwF8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAWwCsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T14:34:16.216Z",
+              "WhenOpened": "2025-07-06T11:47:13.87Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "HomeModel.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\ViewModels\\HomeModel.cs",
-              "RelativeDocumentMoniker": "Emdad\\ViewModels\\HomeModel.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\ViewModels\\HomeModel.cs",
-              "RelativeToolTip": "Emdad\\ViewModels\\HomeModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T14:26:22.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "EmdadContext.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Data\\EmdadContext.cs",
-              "RelativeDocumentMoniker": "Emdad\\Data\\EmdadContext.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Data\\EmdadContext.cs",
-              "RelativeToolTip": "Emdad\\Data\\EmdadContext.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAkwCYAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T13:58:45.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "SectorsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Models\\Repositories\\SectorsRepository.cs",
-              "RelativeDocumentMoniker": "Emdad\\Models\\Repositories\\SectorsRepository.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Models\\Repositories\\SectorsRepository.cs",
-              "RelativeToolTip": "Emdad\\Models\\Repositories\\SectorsRepository.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAwwD0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T13:57:22.218Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "CitizensSettingsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Models\\Repositories\\CitizensSettingsRepository.cs",
-              "RelativeDocumentMoniker": "Emdad\\Models\\Repositories\\CitizensSettingsRepository.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Models\\Repositories\\CitizensSettingsRepository.cs",
-              "RelativeToolTip": "Emdad\\Models\\Repositories\\CitizensSettingsRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T13:57:12.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "CitizensSettings.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Models\\CitizensSettings.cs",
               "RelativeDocumentMoniker": "Emdad\\Models\\CitizensSettings.cs",
               "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Models\\CitizensSettings.cs",
               "RelativeToolTip": "Emdad\\Models\\CitizensSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T13:39:15.844Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "FeedbackAndSuggestion.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Models\\FeedbackAndSuggestion.cs",
-              "RelativeDocumentMoniker": "Emdad\\Models\\FeedbackAndSuggestion.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Models\\FeedbackAndSuggestion.cs",
-              "RelativeToolTip": "Emdad\\Models\\FeedbackAndSuggestion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T09:53:31.828Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Citizen.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Models\\Citizen.cs",
-              "RelativeDocumentMoniker": "Emdad\\Models\\Citizen.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Models\\Citizen.cs",
-              "RelativeToolTip": "Emdad\\Models\\Citizen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T09:49:00.455Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "PublicSubmission.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Models\\PublicSubmission.cs",
-              "RelativeDocumentMoniker": "Emdad\\Models\\PublicSubmission.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Models\\PublicSubmission.cs",
-              "RelativeToolTip": "Emdad\\Models\\PublicSubmission.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T09:48:40.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Emdad\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Emdad\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAkwJ4AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T09:48:12.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Emdad\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Emdad\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAGgBAAAAAAAAAAAAwIgBAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-05T09:42:21.852Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Areas\\Admin\\Views\\AdminAccount\\Login.cshtml",
-              "RelativeDocumentMoniker": "Emdad\\Areas\\Admin\\Views\\AdminAccount\\Login.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Areas\\Admin\\Views\\AdminAccount\\Login.cshtml",
-              "RelativeToolTip": "Emdad\\Areas\\Admin\\Views\\AdminAccount\\Login.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-05T09:25:10.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "RegisterAndLogin.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Views\\Account\\RegisterAndLogin.cshtml",
-              "RelativeDocumentMoniker": "Emdad\\Views\\Account\\RegisterAndLogin.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Views\\Account\\RegisterAndLogin.cshtml",
-              "RelativeToolTip": "Emdad\\Views\\Account\\RegisterAndLogin.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-05T09:24:32.169Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Emdad\\Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Emdad\\Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAMkAAAAAAAAAAAAAADYAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-05T09:19:49.381Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Program.cs",
-              "RelativeDocumentMoniker": "Emdad\\Program.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Program.cs",
-              "RelativeToolTip": "Emdad\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T09:18:37.192Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "AdminManage.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Areas\\Admin\\Views\\Admin\\AdminManage.cshtml",
-              "RelativeDocumentMoniker": "Emdad\\Areas\\Admin\\Views\\Admin\\AdminManage.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Areas\\Admin\\Views\\Admin\\AdminManage.cshtml",
-              "RelativeToolTip": "Emdad\\Areas\\Admin\\Views\\Admin\\AdminManage.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-05T09:10:37.7Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "ManageSector.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Areas\\Admin\\Views\\Home\\ManageSector.cshtml",
-              "RelativeDocumentMoniker": "Emdad\\Areas\\Admin\\Views\\Home\\ManageSector.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Areas\\Admin\\Views\\Home\\ManageSector.cshtml",
-              "RelativeToolTip": "Emdad\\Areas\\Admin\\Views\\Home\\ManageSector.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACMAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-05T08:03:53.329Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeModel.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Areas\\Admin\\ViewModels\\HomeModel.cs",
-              "RelativeDocumentMoniker": "Emdad\\Areas\\Admin\\ViewModels\\HomeModel.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Areas\\Admin\\ViewModels\\HomeModel.cs",
-              "RelativeToolTip": "Emdad\\Areas\\Admin\\ViewModels\\HomeModel.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAgwB8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T07:31:23.02Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "AdminAccountController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Areas\\Admin\\Controllers\\AdminAccountController.cs",
-              "RelativeDocumentMoniker": "Emdad\\Areas\\Admin\\Controllers\\AdminAccountController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Areas\\Admin\\Controllers\\AdminAccountController.cs",
-              "RelativeToolTip": "Emdad\\Areas\\Admin\\Controllers\\AdminAccountController.cs",
-              "ViewState": "AgIAAKoAAAAAAAAAAAAuwL4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T07:28:46.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "SubmissionDataController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Controllers\\SubmissionDataController.cs",
-              "RelativeDocumentMoniker": "Emdad\\Controllers\\SubmissionDataController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Controllers\\SubmissionDataController.cs",
-              "RelativeToolTip": "Emdad\\Controllers\\SubmissionDataController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowCgAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T07:28:46.093Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "SubmissionDetails.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Areas\\Admin\\Views\\Home\\SubmissionDetails.cshtml",
-              "RelativeDocumentMoniker": "Emdad\\Areas\\Admin\\Views\\Home\\SubmissionDetails.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive - University Of Jordan\\University\\Software\\project_add features\\Emdad-backend\\Emdad\\Emdad\\Areas\\Admin\\Views\\Home\\SubmissionDetails.cshtml",
-              "RelativeToolTip": "Emdad\\Areas\\Admin\\Views\\Home\\SubmissionDetails.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-05T07:26:12.991Z",
+              "WhenOpened": "2025-07-06T11:47:06.96Z",
               "EditorCaption": ""
             }
           ]
