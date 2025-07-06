@@ -1,0 +1,95 @@
+﻿@model IEnumerable<Emdad.Models.FormField>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FormFieldLabel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FormFieldName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FormFieldType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FormFieldIsRequired)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SectorsServices)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsActive)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsDelete)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreateId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreateDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EditId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EditDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FormFieldLabel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FormFieldName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FormFieldType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FormFieldIsRequired)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SectorsServices.SectorsServicesId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsActive)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsDelete)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EditId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EditDate)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.FormFieldId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.FormFieldId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.FormFieldId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

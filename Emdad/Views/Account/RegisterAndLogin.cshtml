@@ -1,0 +1,118 @@
+﻿@model Emdad.ViewModels.AuthPageViewModel
+
+@{
+    ViewData["Title"] = "Register And Login";
+}
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap"
+          rel="stylesheet" />
+    <link rel="stylesheet" href="~/assets/signin&signup/style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+          rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Citizen Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box login">
+            <form asp-controller="Account" asp-action="Login" method="post" novalidate="">
+                <h1>تسجيل دخول</h1>
+                <div class="input-box">
+                    <input asp-for="Login.CitizenNationalId" class="form-control" placeholder="الرقم الوطني" />
+                    <span asp-validation-for="Login.CitizenNationalId" class="text-danger"></span>
+                    <i class="bx bxs-user"></i>
+                </div>
+                <div class="input-box">
+                    <input asp-for="Login.Password" class="form-control" placeholder="كلمة السر" />
+                    <span asp-validation-for="Login.Password" class="text-danger"></span>
+                    <i class="bx bxs-lock-alt"></i>
+                </div>
+                <div class="input-box form-check">
+                    <input asp-for="Login.RememberMe" class="form-check-input" type="checkbox" />
+                    <label asp-for="Login.RememberMe" class="form-check-label">تذكرني</label>
+                    <span asp-validation-for="Login.RememberMe" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value=" تسجيل دخول" class="btn btn-primary" />
+                </div>
+
+                @*  <button type="button"
+                        onclick="window.location.href='../dist/home_page.html';"
+                        class="btn">
+                    <a href="../dist/home_page.html">تسجيل دخول</a>
+                </button> *@
+
+                <p>او سجّل باستخدام وسائل التواصل الاجتماعي</p>
+                <div class="social-icons">
+                    <a href="#"><i class="bx bxl-google"></i></a>
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-github"></i></a>
+                    <a href="#"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <form asp-controller="Account" asp-action="Register" method="post">
+                <h1>إنشاء حساب</h1>
+                <div class="input-box">
+                    <input asp-for="Register.CitizenNationalId" class="form-control" placeholder="الرقم الوطني" />
+                    <span asp-validation-for="Register.CitizenNationalId" class="text-danger"></span>
+                    <i class="bx bxs-user"></i>
+                </div>
+                <div class="input-box">
+                    <i class="bx bxs-envelope"></i>
+                    <input asp-for="Register.Email" class="form-control" placeholder="البريد الالكتروني"/>
+                    <span asp-validation-for="Register.Email" class="text-danger"></span>
+                </div>
+                <div class="input-box">
+                    <input asp-for="Register.Password" class="form-control" placeholder="كلمة السر"/>
+                    <span asp-validation-for="Register.Password" class="text-danger"></span>
+                    <i class="bx bxs-lock-alt"></i>
+                </div>
+                <div class="input-box">
+                    <input asp-for="Register.ConfirmPassword" class="form-control" placeholder="اعد كتابة كلمة السر"/>
+                    <span asp-validation-for="Register.ConfirmPassword" class="text-danger"></span>
+                    <i class="bx bxs-lock-alt"></i>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="انشاء حساب" class="btn btn-primary" />
+                </div>
+
+                @*  <button type="button"
+                        onclick="window.location.href='../dist/home_page.html';"
+                        class="btn">
+                    <a href="../dist/home_page.html">إنشاء حساب</a>
+                </button> *@
+                <p>او سجّل باستخدام وسائل التواصل الاجتماعي</p>
+                <div class="social-icons">
+                    <a href="#"><i class="bx bxl-google"></i></a>
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-github"></i></a>
+                    <a href="#"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </form>
+        </div>
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <h1>! أهلا بك</h1>
+                <p>ليس لديك حساب ؟</p>
+                <button class="btn register-btn">إنشاء حساب</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h1>! أهلا بعودتك</h1>
+                <p>لديك حساب بالفعل ؟</p>
+                <button class="btn login-btn">تسجل دخول</button>
+            </div>
+        </div>
+    </div>
+    <script src="~/assets/signin&signup/main.js"></script>
+</body>
+</html>

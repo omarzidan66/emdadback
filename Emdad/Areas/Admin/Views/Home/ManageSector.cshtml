@@ -1,0 +1,334 @@
+﻿@model Emdad.Areas.Admin.ViewModels.HomeModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categories</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap"
+    rel="stylesheet" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="~/assets/src/output.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="shadow-md bg-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-10 py-3">
+            <div class="flex items-center justify-between">
+                <button id="menu-toggle"
+                class="sm:hidden text-goldForm focus:outline-none">
+                    <svg class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                <ul class="hidden sm:flex sm:items-center gap-8 text-base">
+                    <li>
+                        
+                        <a asp-controller="Admin" asp-action="AdminManage" class="hover:text-goldForm font-bold">  الادارة العامة</a>
+
+                    </li>
+                    <li>
+                        <a asp-controller="Home" asp-action="Index" class="hover:text-goldForm font-bold">إحصاءات عامة</a>
+                    </li>
+                </ul>
+                <a asp-controller="Home" asp-action="Logout"
+                   class="bg-red-500 hover:bg-red-600 text-white font-medium px-4 py-2 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-red-300">
+                    تسجيل خروج
+                </a>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="sm:hidden hidden mt-4 space-y-2">
+                <a href="#"
+                class="block px-4 py-2 rounded hover:bg-gray-100 font-bold">
+                    إحصاءات عامة
+                </a>
+                <a href="./loginSuperAdmin.html"
+                class="block px-4 py-2 rounded hover:bg-gray-100">
+                    الادارة العامة
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    @{
+        int? sectorId = ViewBag.CurrentSectorId;
+        var sector = Model.ListSectors.FirstOrDefault(s => s.SectorsId == sectorId);
+    }
+
+    @if (sector != null)
+    {
+        <p class="sm:text-3xl text-md text-goldForm font-bold mx-10 mt-5 text-center">
+            @sector.SectorsName
+
+        </p>
+    }
+    else
+    {
+        <p class="text-red-500 text-center">اسم القطاع غير متوفر</p>
+    }
+    <section class="mx-10 mt-10 text-right" dir="rtl">
+        <p class="sm:text-xl text-sm text-goldForm font-medium mb-10">
+            نظرة عامة
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <div class="px-4 py-5 sm:p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                            <i class="fas fa-file-alt text-white"></i>
+                        </div>
+                        <div class="mr-4">
+                            <div class="text-sm font-medium text-gray-500 truncate">
+                                اجمالي البلاغات
+                            </div>
+                            <div class="mt-1 text-3xl font-semibold text-gray-900">@Model.ListSubmission.Where(s => s.IsActive == true).Count()</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <div class="px-4 py-5 sm:p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-yellow-500 rounded-md p-3">
+                            <i class="fas fa-spinner text-white"></i>
+                        </div>
+                        <div class="mr-4">
+                            <div class="text-sm font-medium text-gray-500 truncate">
+                                قيد التنفيذ
+                            </div>
+                            <div class="mt-1 text-3xl font-semibold text-gray-900">@Model.ListSubmission.Where(s => (s.IsActive == true)&&s.SubmissionStatus=="قيد التنفيذ").Count()</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <div class="px-4 py-5 sm:p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-green-500 rounded-md p-3">
+                            <i class="fas fa-check-circle text-white"></i>
+                        </div>
+                        <div class="mr-4">
+                            <div class="text-sm font-medium text-gray-500 truncate">
+                                مقبول
+                            </div>
+                            <div class="mt-1 text-3xl font-semibold text-gray-900">@Model.ListSubmission.Where(s => (s.IsActive == true) && s.SubmissionStatus == "مقبول").Count()</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <div class="px-4 py-5 sm:p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-red-500 rounded-md p-3">
+                            <i class="fas fa-clock text-white"></i>
+                        </div>
+                        <div class="mr-4">
+                            <div class="text-sm font-medium text-gray-500 truncate">
+                                مرفوض
+                            </div>
+                            <div class="mt-1 text-3xl font-semibold text-gray-900">@Model.ListSubmission.Where(s => (s.IsActive == true) && s.SubmissionStatus == "مرفوض").Count()</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mx-10 mt-10">
+        <p class="sm:text-xl text-sm text-goldForm font-medium mb-10 text-right">
+            احدث الطلبات
+        </p>
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200 text-right" dir="rtl">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            الرقم
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+الرقم الوطني                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            القسم
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            الخدمة
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            الوقت والتاريخ
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            الحالة
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            الاجراءات
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200"
+                id="submissionsTable">
+                    @foreach (var item in Model.ListSubmission)
+                    {
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                #@item.SubmissionId
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                @item.SubmissionName
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                @item.SectorsName
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                @item.SectorsServicesName
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                @item.CreateDate
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    @item.SubmissionStatus
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <button class="text-goldForm hover:font-extrabold view-detail mr-3 font-bold"
+                                        data-id="@item.SubmissionId"
+                                        >
+                                    تحديث الحالة
+                                </button>
+                                <form asp-controller="Home" asp-action="SubmissionDetails" method="post">
+                                    <input type="hidden" name="id" value="@item.SubmissionId" />
+                                    <button type="submit" class="text-goldForm hover:font-extrabold view-detail mr-3 font-bold">التفاصيل</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <div id="detailModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 min-h-screen flex items-center justify-center p-4 hidden z-50" dir="rtl">
+        <div class="bg-white rounded-lg shadow-xl max-w-6xl w-full max-h-screen overflow-y-auto">
+            <div class="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
+                <h3 class="text-lg font-medium text-gray-900">تحديث الحالة </h3>
+                <button id="closeDetailModal" class="text-gray-400 hover:text-gray-500">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="p-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-6">
+
+                    <div class="space-y-4">
+                        
+
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700">الحالة</label>
+                            <form asp-action="ChangeStatus" method="post">
+                                <input type="hidden" name="submissionId" id="submissionIdField" />
+                                <input type="hidden" name="returnUrl" value="@Context.Request.Path" />
+
+                                <select id="detailStatus" name="status" onchange="this.form.submit()" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm sm:text-sm">
+                                    <option value="" selected >اختر الحالة</option>
+                                    <option value="قيد التنفيذ">قيد التنفيذ</option>
+                                    <option value="مقبول">مقبول</option>
+                                    <option value="مرفوض">مرفوض</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+
+                  
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+    @using System.Text.Json
+    @using System.Text.Encodings.Web
+    @using System.Text.Json.Serialization
+
+    @{
+        var jsonOptions = new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                WriteIndented = false,
+                Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
+                ReferenceHandler = ReferenceHandler.Preserve // 🔥 This is the fix
+            };
+    }
+    <script>
+        // Data from server model
+        const submissionData = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.ListSubmissionData, jsonOptions));
+        const formFields = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.ListFormField, jsonOptions));
+        const submissions = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.ListSubmission, jsonOptions));
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const viewDetailButtons = document.querySelectorAll(".view-detail");
+            const detailModal = document.getElementById("detailModal");
+            const closeDetailModal = document.getElementById("closeDetailModal");
+
+            // Get references to all containers
+            const submissionIdInput = document.getElementById("submissionIdField");
+            
+            const statusSelect = document.getElementById("detailStatus");
+            
+
+            viewDetailButtons.forEach((button) => {
+                button.addEventListener("click", () => {
+                    const submissionId = parseInt(button.dataset.id, 10);
+                    
+                  
+
+                    // --- 2. Prepare data ---
+                    submissionIdInput.value = submissionId;
+                    window.currentSubmissionId = submissionId; // Store globally for status change
+
+                 
+                    const allSubmissions = Array.isArray(submissions) ? submissions : submissions.$values;
+
+                    // --- 3. Populate general info (Status, Description, etc.) ---
+                    const currentSubmission = allSubmissions.find(s => s.submissionId === submissionId);
+                    console.log(currentSubmission)
+                    if (currentSubmission) {
+                        statusSelect.value = currentSubmission.status;
+                        
+                    }
+
+                    
+
+                    
+
+                    detailModal.classList.remove("hidden");
+                });
+            });
+
+            closeDetailModal?.addEventListener("click", () => {
+                detailModal.classList.add("hidden");
+            });
+        });
+    </script>
+
+
+
+    <script src="~/assets/dist/nav.js"></script>
+</body>
+</html>

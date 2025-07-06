@@ -1,0 +1,79 @@
+﻿@model Emdad.Models.Sectors
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Sectors</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="SectorsId" />
+            <div class="form-group">
+                <label asp-for="SectorsName" class="control-label"></label>
+                <input asp-for="SectorsName" class="form-control" />
+                <span asp-validation-for="SectorsName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SectorsLink" class="control-label"></label>
+                <input asp-for="SectorsLink" class="form-control" />
+                <span asp-validation-for="SectorsLink" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SectorIcon" class="control-label"></label>
+                <input asp-for="SectorIcon" class="form-control" />
+                <span asp-validation-for="SectorIcon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SectorDesc" class="control-label"></label>
+                <input asp-for="SectorDesc" class="form-control" />
+                <span asp-validation-for="SectorDesc" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsActive" /> @Html.DisplayNameFor(model => model.IsActive)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsDelete" /> @Html.DisplayNameFor(model => model.IsDelete)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreateId" class="control-label"></label>
+                <input asp-for="CreateId" class="form-control" />
+                <span asp-validation-for="CreateId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreateDate" class="control-label"></label>
+                <input asp-for="CreateDate" class="form-control" />
+                <span asp-validation-for="CreateDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EditId" class="control-label"></label>
+                <input asp-for="EditId" class="form-control" />
+                <span asp-validation-for="EditId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EditDate" class="control-label"></label>
+                <input asp-for="EditDate" class="form-control" />
+                <span asp-validation-for="EditDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

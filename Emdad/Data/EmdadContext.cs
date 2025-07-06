@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -31,8 +32,9 @@ public partial class EmdadContext : IdentityDbContext
     public virtual DbSet<Submission> Submission { get; set; }
 
     public virtual DbSet<SubmissionData> SubmissionData { get; set; }
-    public virtual DbSet<Citizen> Citizens { get; set; }
+    public virtual DbSet<Citizen> Citizen { get; set; }
+    public virtual DbSet<Admins> Admins { get; set; }
+    public virtual DbSet<CitizensSettings> CitizensSettings { get; set; }
 
- 
-
+    
 }

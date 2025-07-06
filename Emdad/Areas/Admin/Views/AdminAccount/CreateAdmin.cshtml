@@ -1,0 +1,44 @@
+﻿@model Emdad.Areas.Admin.ViewModels.CreateAdminViewModel
+<h2>Create Admin</h2>
+
+<form asp-action="CreateAdmin" method="post">
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+
+    <div>
+        <label asp-for="Password"></label>
+        <input asp-for="Password" type="password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+
+    <div>
+        <label asp-for="FullName"></label>
+        <input asp-for="FullName" />
+        <span asp-validation-for="FullName"></span>
+    </div>
+
+    <div>
+        <label asp-for="PhoneNumber"></label>
+        <input asp-for="PhoneNumber" />
+        <span asp-validation-for="PhoneNumber"></span>
+    </div>
+
+    <div>
+        <label asp-for="AssignedSectorId">Sector</label>
+        <select asp-for="AssignedSectorId" asp-items="Model.AvailableSectors">
+            <option value="">-- Select Sector --</option>
+        </select>
+        <span asp-validation-for="AssignedSectorId"></span>
+    </div>
+
+    <button type="submit">Create Admin</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

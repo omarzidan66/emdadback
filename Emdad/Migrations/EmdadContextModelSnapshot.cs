@@ -22,6 +22,45 @@ namespace Emdad.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Emdad.Models.Admins", b =>
+                {
+                    b.Property<int>("AdminId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AdminId"));
+
+                    b.Property<int?>("AssignedSectorId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("IdentityUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsStopped")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("LastActiveAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("AdminId");
+
+                    b.HasIndex("AssignedSectorId");
+
+                    b.ToTable("Admins");
+                });
+
             modelBuilder.Entity("Emdad.Models.Citizen", b =>
                 {
                     b.Property<int>("CitizenId")
@@ -38,8 +77,9 @@ namespace Emdad.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("CitizenNationalId")
-                        .HasColumnType("int");
+                    b.Property<string>("CitizenNationalId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CitizenPassword")
                         .IsRequired()
@@ -65,7 +105,62 @@ namespace Emdad.Migrations
 
                     b.HasKey("CitizenId");
 
-                    b.ToTable("Citizens");
+                    b.ToTable("Citizen");
+                });
+
+            modelBuilder.Entity("Emdad.Models.CitizensSettings", b =>
+                {
+                    b.Property<int>("CitizensSettingsId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CitizensSettingsId"));
+
+                    b.Property<string>("CitizenAbout")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CitizenEmail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CitizenFullName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CitizenId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CitizenLocation")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CitizenNationalId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CitizenPhone")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreateId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("EditDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("EditId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDelete")
+                        .HasColumnType("bit");
+
+                    b.HasKey("CitizensSettingsId");
+
+                    b.HasIndex("CitizenId");
+
+                    b.ToTable("CitizensSettings");
                 });
 
             modelBuilder.Entity("Emdad.Models.FeedbackAndSuggestion", b =>
@@ -83,9 +178,6 @@ namespace Emdad.Migrations
                     b.Property<string>("CitizenFullName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("CitizenId")
-                        .HasColumnType("int");
 
                     b.Property<string>("CitizenNationalId")
                         .IsRequired()
@@ -115,24 +207,17 @@ namespace Emdad.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("FeedbackAndSuggestionsSector")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
                     b.Property<bool>("IsDelete")
                         .HasColumnType("bit");
 
-                    b.Property<int>("SectorsServicesId")
-                        .HasColumnType("int");
+                    b.Property<string>("SectorsName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("FeedbackAndSuggestionId");
-
-                    b.HasIndex("CitizenId");
-
-                    b.HasIndex("SectorsServicesId");
 
                     b.ToTable("FeedbackAndSuggestions");
                 });
@@ -236,12 +321,12 @@ namespace Emdad.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PublicSubmissionId"));
 
+                    b.Property<int?>("AssignedSectorId")
+                        .HasColumnType("int");
+
                     b.Property<string>("CitizenEmail")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("CitizenId")
-                        .HasColumnType("int");
 
                     b.Property<string>("CitizenNationalId")
                         .IsRequired()
@@ -283,7 +368,7 @@ namespace Emdad.Migrations
 
                     b.HasKey("PublicSubmissionId");
 
-                    b.HasIndex("CitizenId");
+                    b.HasIndex("AssignedSectorId");
 
                     b.ToTable("PublicSubmissions");
                 });
@@ -313,6 +398,14 @@ namespace Emdad.Migrations
 
                     b.Property<bool>("IsDelete")
                         .HasColumnType("bit");
+
+                    b.Property<string>("SectorDesc")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SectorIcon")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SectorsLink")
                         .IsRequired()
@@ -356,10 +449,6 @@ namespace Emdad.Migrations
                     b.Property<int>("SectorsId")
                         .HasColumnType("int");
 
-                    b.Property<string>("SectorsName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("SectorsServicesLink")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -387,8 +476,8 @@ namespace Emdad.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SubmissionId"));
 
-                    b.Property<int>("CitizenId")
-                        .HasColumnType("int");
+                    b.Property<string>("CitizenNationalId")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreateDate")
                         .HasColumnType("datetime2");
@@ -408,16 +497,30 @@ namespace Emdad.Migrations
                     b.Property<bool>("IsDelete")
                         .HasColumnType("bit");
 
-                    b.Property<int>("SectorsServicesId")
+                    b.Property<int>("SectorsId")
                         .HasColumnType("int");
+
+                    b.Property<string>("SectorsName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("SectorsServicesId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SectorsServicesName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SectorsServicesType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SubmissionName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SubmissionStatus")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("SubmissionId");
-
-                    b.HasIndex("CitizenId");
 
                     b.HasIndex("SectorsServicesId");
 
@@ -667,7 +770,16 @@ namespace Emdad.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Emdad.Models.FeedbackAndSuggestion", b =>
+            modelBuilder.Entity("Emdad.Models.Admins", b =>
+                {
+                    b.HasOne("Emdad.Models.Sectors", "Sector")
+                        .WithMany()
+                        .HasForeignKey("AssignedSectorId");
+
+                    b.Navigation("Sector");
+                });
+
+            modelBuilder.Entity("Emdad.Models.CitizensSettings", b =>
                 {
                     b.HasOne("Emdad.Models.Citizen", "Citizen")
                         .WithMany()
@@ -675,15 +787,7 @@ namespace Emdad.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Emdad.Models.SectorsServices", "SectorsServices")
-                        .WithMany()
-                        .HasForeignKey("SectorsServicesId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Citizen");
-
-                    b.Navigation("SectorsServices");
                 });
 
             modelBuilder.Entity("Emdad.Models.FormField", b =>
@@ -710,13 +814,11 @@ namespace Emdad.Migrations
 
             modelBuilder.Entity("Emdad.Models.PublicSubmission", b =>
                 {
-                    b.HasOne("Emdad.Models.Citizen", "Citizen")
+                    b.HasOne("Emdad.Models.Sectors", "Sector")
                         .WithMany()
-                        .HasForeignKey("CitizenId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("AssignedSectorId");
 
-                    b.Navigation("Citizen");
+                    b.Navigation("Sector");
                 });
 
             modelBuilder.Entity("Emdad.Models.SectorsServices", b =>
@@ -732,19 +834,9 @@ namespace Emdad.Migrations
 
             modelBuilder.Entity("Emdad.Models.Submission", b =>
                 {
-                    b.HasOne("Emdad.Models.Citizen", "Citizen")
-                        .WithMany()
-                        .HasForeignKey("CitizenId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Emdad.Models.SectorsServices", "SectorsServices")
                         .WithMany()
-                        .HasForeignKey("SectorsServicesId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Citizen");
+                        .HasForeignKey("SectorsServicesId");
 
                     b.Navigation("SectorsServices");
                 });

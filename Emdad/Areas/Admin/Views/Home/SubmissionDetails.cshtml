@@ -1,0 +1,35 @@
+﻿@model Emdad.Areas.Admin.ViewModels.SubmissionDetailViewModel
+
+<h2>Submission Details - ID: @Model.SubmissionId</h2>
+<head>
+    <link href="~/assets/src/output.css" rel="stylesheet" />
+
+</head>
+<div class="overflow-x-auto rounded-lg shadow-md">
+    <table class="min-w-full divide-y divide-gray-200 text-sm text-left">
+        <thead class="bg-gray-100 text-gray-700 uppercase text-xs tracking-wider">
+            <tr>
+                <th class="px-6 py-3">Field</th>
+                <th class="px-6 py-3">Value</th>
+            </tr>
+        </thead>
+        <tbody class="bg-white divide-y divide-gray-100">
+            @foreach (var field in Model.Fields)
+            {
+                <tr class="hover:bg-gray-50 transition">
+                    <td class="px-6 py-4 font-medium text-gray-800 whitespace-nowrap">@field.Label</td>
+                    <td class="px-6 py-4 text-gray-700">
+                        @if (field.Type == "file" || field.Type == "image")
+                        {
+                            <img src="@field.Value" alt="@field.Label" class="max-w-[200px] max-h-[150px] object-cover rounded" />
+                        }
+                        else
+                        {
+                            @field.Value
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

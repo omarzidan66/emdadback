@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Emdad.Models
 {
@@ -6,7 +7,7 @@ namespace Emdad.Models
     {
         public int CitizenId { get; set; }
         [Required]
-        public int CitizenNationalId { get; set; }
+        public string CitizenNationalId { get; set; }
         [Required]
         [EmailAddress]
         public string CitizenEmail { get; set; }
@@ -17,5 +18,6 @@ namespace Emdad.Models
         [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage = "Password Not Matche")]
         public string CitizenConfirmPassword { get; set; }
+        
     }
 }

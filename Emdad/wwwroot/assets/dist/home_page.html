@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/style_home.css" />
+    <link rel="stylesheet" href="../src/service_home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap"
+      rel="stylesheet" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="../src/output.css" />
+    <link rel="stylesheet" href="../src/report_home.css" />
+    <!-- <link rel="stylesheet" href="feedBack.css" /> -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
+            fontFamily: {
+              sans: ["Open Sans", "Noto Kufi Arabic", "Arial", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <!-- ما الها فايدة -->
+  <!-- <body class="bg-gray-800"> -->
+
+  <body>
+    <special-header></special-header>
+
+    <section class="banner w-full h-[100vh] relative" id="banner">
+      <div class="videoBG">
+        <div>
+          <video
+            class="h-auto w-full object-cover"
+            src="../Images/video2.mp4"
+            autoplay
+            muted
+            loop></video>
+        </div>
+      </div>
+      <div
+        class="banner-text w-full h-full absolute flex flex-row-reverse justify-between items-end text-white">
+        <div
+          class="text-end w-[510px] sm:mx-16 mx-10 sm:mb-10 relative sm:bottom-0 bottom-[100px]">
+          <p class="sm:text-2xl mb-5">
+            ... نحن هنا لنستمع <br />
+            قدم ملاحظاتك و كن شريكا في التطور
+          </p>
+          <p class="text-sm">
+            منصة امداد تهدف الى تسهيل التواصل بين المواطنين و الحكومة من خلال
+            تقديم خدمات متنوعة تلبي احتياجات المجتمع
+          </p>
+        </div>
+        <div class="mouse_down mx-16 mb-10 sm:flex hidden">
+          <div class="mouse-icon">
+            <svg
+              width="19"
+              height="30"
+              viewBox="0 0 19 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M16.875 20.625V9.375C16.875 7.38588 16.0848 5.47822 14.6783 4.0717C13.2718 2.66518 11.3641 1.875 9.375 1.875C7.38588 1.875 5.47822 2.66518 4.0717 4.0717C2.66518 5.47822 1.875 7.38588 1.875 9.375V20.625C1.875 22.6141 2.66518 24.5218 4.0717 25.9283C5.47822 27.3348 7.38588 28.125 9.375 28.125C11.3641 28.125 13.2718 27.3348 14.6783 25.9283C16.0848 24.5218 16.875 22.6141 16.875 20.625ZM9.375 0C6.8886 0 4.50403 0.98772 2.74587 2.74587C0.98772 4.50403 0 6.8886 0 9.375V20.625C0 23.1114 0.98772 25.496 2.74587 27.2541C4.50403 29.0123 6.8886 30 9.375 30C11.8614 30 14.246 29.0123 16.0041 27.2541C17.7623 25.496 18.75 23.1114 18.75 20.625V9.375C18.75 6.8886 17.7623 4.50403 16.0041 2.74587C14.246 0.98772 11.8614 0 9.375 0Z"
+                fill="white"
+                class="mouse"></path>
+              <path
+                d="M10.0379 7.39959C9.8621 7.22377 9.62364 7.125 9.375 7.125C9.12636 7.125 8.8879 7.22377 8.71209 7.39959C8.53627 7.5754 8.4375 7.81386 8.4375 8.0625V11.8125C8.4375 12.0611 8.53627 12.2996 8.71209 12.4754C8.8879 12.6512 9.12636 12.75 9.375 12.75C9.62364 12.75 9.8621 12.6512 10.0379 12.4754C10.2137 12.2996 10.3125 12.0611 10.3125 11.8125V8.0625C10.3125 7.81386 10.2137 7.5754 10.0379 7.39959Z"
+                fill="white"
+                class="cursor"></path>
+            </svg>
+            <p class="text-white text-[10px] relative right-7 mt-2 w-24">
+              حرك الفأرة للأسفل
+            </p>
+          </div>
+        </div>
+        <div class="banner-right-button text-lg sm:mx-16 sm:mb-10">
+          <a href="../signin&signup/signin&signup.html">بدء التسجيل</a>
+        </div>
+      </div>
+    </section>
+    <!-- الخدمات -->
+
+    <section class="services" id="services">
+      <!-- <div class="h-28 md:h-0"></div> -->
+      <h1
+        class="sevicesAnimation m-20 text-center service_title animate__animated animate__backInUp animate__delay-0.5s">
+        الخدمات
+      </h1>
+
+      <div class="owl-carousel owl-theme">
+        <div class="card">
+          <div class="slide slide1">
+            <div class="content">
+              <div class="item">
+                <div
+                  class="w-56 h-56 p-4 flex flex-col items-center justify-center">
+                  <i class="fa-solid fa-droplet text-[#CEB579] text-2xl"></i>
+                  <a class="text-xl text-center" href="./water_service.html"
+                    >قطاع المياه</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide slide2">
+            <div class="content">
+              <p>احصل على خدمات المياه، واشتكِ عن الأعطال أو الانقطاعات</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="slide slide1">
+            <div class="content">
+              <div class="item">
+                <div
+                  class="w-56 h-56 p-4 flex flex-col items-center justify-center">
+                  <i class="fa-solid fa-seedling text-[#CEB579] text-2xl"></i>
+                  <a
+                    class="text-xl text-center"
+                    href="./agriculture_service.html"
+                    >قطاع الزراعة</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide slide2">
+            <div class="content">
+              <p>استخرج التراخيص وقدم الشكاوى المتعلقة بالمجال الزراعي</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="slide slide1">
+            <div class="content">
+              <div class="item">
+                <div
+                  class="w-56 h-56 p-4 flex flex-col items-center justify-center">
+                  <i class="fa-solid fa-bolt text-[#CEB579] text-2xl"></i>
+                  <a
+                    class="text-xl text-center"
+                    href="./Energy&electricity_services.html"
+                    >قطاع الكهرباء والطاقة</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide slide2">
+            <div class="content">
+              <p>تابع خدمات الكهرباء والطاقة ، وأبلغ عن أي مشاكل أو طلبات</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="slide slide1">
+            <div class="content">
+              <div class="item">
+                <div
+                  class="w-56 h-56 p-4 flex flex-col items-center justify-center">
+                  <i class="fas fa-user-cog text-[#CEB579] text-2xl"></i>
+
+                  <a class="text-xl text-center" href="./publics_services.html"
+                    >الخدمات العامة</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide slide2">
+            <div class="content">
+              <p>أبلغ عن مشكلات البنية التحتية والخدمات البلدية</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="slide slide1">
+            <div class="content">
+              <div class="item">
+                <div
+                  class="w-56 h-56 p-4 flex flex-col items-center justify-center">
+                  <i class="fa-solid fa-car-rear text-[#CEB579] text-2xl"></i>
+                  <a
+                    class="text-xl text-center"
+                    href="./traffic_department.html"
+                    >دائرة السير
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide slide2">
+            <div class="content">
+              <p>استعلم عن المخالفات، وقدم طلبات التراخيص بسهولة</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- البلاغات العامة  -->
+    <section class="reportss scroll-mt-24" id="reportss">
+      <p class="reportsAnimation text-[50px] text-center mt-5 mb-2">
+        بلاغات عامة
+      </p>
+
+      <div
+        class="repoerts flex flex-col lg:flex-row-reverse lg:items-start w-full px-5">
+        <!-- side 1 -->
+        <div
+          class="report_sec w-full lg:w-4/6 bg-white p-12 rounded-lg shadow-lg">
+          <div class="flex flex-col lg:flex-row-reverse mb-7 w-full">
+            <div class="flex flex-col items-end w-full lg:w-1/2 lg:ml-5">
+              <label class="mb-3 text-lg">: الاسم الرباعي</label>
+              <input
+                type="text"
+                class="bg-gray-300 rounded-md h-10 w-full text-right" />
+            </div>
+            <div class="flex flex-col items-end w-full lg:w-1/2">
+              <label class="mb-3 text-lg">: الرقم الوطني</label>
+              <input
+                type="number"
+                class="bg-gray-300 rounded-md h-10 w-full text-right" />
+            </div>
+          </div>
+
+          <div class="flex flex-col lg:flex-row-reverse mb-7 w-full">
+            <div class="flex flex-col items-end w-full lg:w-1/2 lg:ml-5">
+              <label class="mb-3 text-lg">: البريد الإلكتروني</label>
+              <input
+                type="email"
+                class="bg-gray-300 rounded-md h-10 w-full text-right" />
+            </div>
+            <div class="flex flex-col items-end w-full lg:w-1/2">
+              <label class="mb-3 text-lg">: رقم الهاتف</label>
+              <input
+                type="number"
+                class="bg-gray-300 rounded-md h-10 w-full text-right" />
+            </div>
+          </div>
+
+          <div class="flex flex-col items-end w-full mb-7">
+            <label class="mb-3 text-lg">: (المحافظة والمنطقة) الموقع</label>
+            <input
+              type="text"
+              class="bg-gray-300 rounded-md h-10 w-full text-right" />
+          </div>
+
+          <div class="flex flex-col items-end w-full">
+            <label class="mb-3 text-lg">: اكتب بلاغك</label>
+
+            <textarea
+              class="bg-gray-300 rounded-md h-28 w-full text-right"></textarea>
+          </div>
+          <button
+            class="bg-[#ceb579] rounded-md text-white font-bold flex justify-center items-center w-2/5 lg:w-1/5 h-fit sm:ml-0 py-1 my-1 px-2 mt-3">
+            تقديم بلاغ
+          </button>
+        </div>
+        <!-- side 2 -->
+        <div
+          id="lazy-counter-placeholder"
+          class="w-full lg:w-2/6 h-80 p-5 text-white hidden lg:block lg:mr-5 m-auto flex justify-center items-center"></div>
+      </div>
+    </section>
+    <!-- بلاغاتي -->
+    <section class="w-full" id="myReports">
+      <div class="w-full flex justify-center items-center mt-10">
+        <p class="text-2xl font-bold myReportsAnimation">بلاغاتي</p>
+      </div>
+      <div class="w-full mt-10 grid grid-row-5 px-10 gap-3">
+        <div
+          class="grid sm:grid-cols-12 grid-cols-1 sm:h-14 h-32 shadow-md px-5 py-1">
+          <div class="sm:col-span-4 col-span-1 flex items-center">
+            <p
+              class="bg-[#CEB579] w-1/2 h-fit flex justify-center rounded-sm text-green-600 font-medium py-1 mr-8">
+              مقبول
+            </p>
+            <p class="w-1/2 flex justify-end sm:justify-start">: حالة البلاغ</p>
+          </div>
+          <p class="sm:col-span-8 flex justify-end sm:m-0 mt-3 items-center">
+            اسم البلاغ : يتم التحديد لاحقا
+          </p>
+        </div>
+        <div
+          class="grid sm:grid-cols-12 grid-cols-1 sm:h-14 h-32 shadow-md px-5 py-1">
+          <div class="sm:col-span-4 col-span-1 flex items-center">
+            <p
+              class="bg-[#CEB579] w-1/2 h-fit flex justify-center rounded-sm text-gray-600 font-medium py-1 mr-8">
+              قيد التنفيذ
+            </p>
+            <p class="w-1/2 flex justify-end sm:justify-start">: حالة البلاغ</p>
+          </div>
+          <p class="sm:col-span-8 flex justify-end sm:m-0 mt-3 items-center">
+            اسم البلاغ : يتم التحديد لاحقا
+          </p>
+        </div>
+        <div
+          class="grid sm:grid-cols-12 grid-cols-1 sm:h-14 h-32 shadow-md px-5 py-1">
+          <div class="sm:col-span-4 col-span-1 flex items-center">
+            <p
+              class="bg-[#CEB579] w-1/2 h-fit flex justify-center rounded-sm text-red-600 font-medium py-1 mr-8">
+              مرفوض
+            </p>
+            <p class="w-1/2 flex justify-end sm:justify-start">: حالة البلاغ</p>
+          </div>
+          <p class="sm:col-span-8 flex justify-end sm:m-0 mt-3 items-center">
+            اسم البلاغ : يتم التحديد لاحقا
+          </p>
+        </div>
+        <div
+          class="grid sm:grid-cols-12 grid-cols-1 sm:h-14 h-32 shadow-md px-5 py-1">
+          <div class="sm:col-span-4 col-span-1 flex items-center">
+            <p
+              class="bg-[#CEB579] w-1/2 h-fit flex justify-center rounded-sm text-green-600 font-medium py-1 mr-8">
+              مقبول
+            </p>
+            <p class="w-1/2 flex justify-end sm:justify-start">: حالة البلاغ</p>
+          </div>
+          <p class="sm:col-span-8 flex justify-end sm:m-0 mt-3 items-center">
+            اسم البلاغ : يتم التحديد لاحقا
+          </p>
+        </div>
+        <div
+          class="grid sm:grid-cols-12 grid-cols-1 sm:h-14 h-32 shadow-md px-5 py-1">
+          <div class="sm:col-span-4 col-span-1 flex items-center">
+            <p
+              class="bg-[#CEB579] w-1/2 h-fit flex justify-center rounded-sm text-green-600 font-medium py-1 mr-8">
+              مقبول
+            </p>
+            <p class="w-1/2 flex justify-end sm:justify-start">: حالة البلاغ</p>
+          </div>
+          <p class="sm:col-span-8 flex justify-end sm:m-0 mt-3 items-center">
+            اسم البلاغ : يتم التحديد لاحقا
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- العطاءات  -->
+
+    <section class="w-full" id="tenders">
+      <div class="w-full flex justify-center items-center mt-20">
+        <p class="text-2xl font-bold tendersAnimation">العطاءات</p>
+      </div>
+      <div class="w-full mt-10 px-4 sm:px-10 mb-20">
+        <div class="overflow-x-auto">
+          <div class="min-w-[768px]">
+            <div
+              class="grid grid-rows-1 grid-cols-6 bg-[#CEB579] h-14 rounded-md font-bold items-center px-5 text-black">
+              <p class="flex justify-center">التفاصيل</p>
+              <p class="flex justify-center">الوثائق</p>
+              <p class="flex justify-center">تاريخ الايداع</p>
+              <p class="flex justify-center">تاريخ الطرح</p>
+              <p class="flex justify-center">اسم العطاء</p>
+              <p class="flex justify-center">رقم العطاء</p>
+            </div>
+            <div class="grid grid-rows-4 w-full items-center px-5 rounded-md">
+              <div class="grid grid-cols-6 border-b py-3">
+                <button
+                  type="button"
+                  onclick="window.location.href='https://www.tenderjo.com/Default.aspx?lang=en';"
+                  class="flex justify-center bg-goldForm rounded-sm py-1 px-2">
+                  <a
+                    href="https://www.tenderjo.com/Default.aspx?lang=en"
+                    class="cursor-pointer"
+                    >التفاصيل</a
+                  >
+                </button>
+                <p class="flex justify-center items-center">الوثائق</p>
+                <p class="flex justify-center items-center">2025/04/16</p>
+                <p class="flex justify-center items-center">2025/03/27</p>
+                <p class="flex justify-center items-center text-sm">
+                  انشاء المبنى الاداري
+                </p>
+                <p class="flex justify-center items-center">26/2025</p>
+              </div>
+              <div class="grid grid-cols-6 border-b py-3">
+                <button
+                  type="button"
+                  onclick="window.location.href='https://www.tenderjo.com/Default.aspx?lang=en';"
+                  class="flex justify-center bg-goldForm rounded-sm py-1 px-2">
+                  <a
+                    href="https://www.tenderjo.com/Default.aspx?lang=en"
+                    class="cursor-pointer"
+                    >التفاصيل</a
+                  >
+                </button>
+                <p class="flex justify-center items-center">الوثائق</p>
+                <p class="flex justify-center items-center">2025/04/16</p>
+                <p class="flex justify-center items-center">2025/03/27</p>
+                <p class="flex justify-center items-center text-sm">
+                  انشاء المبنى الاداري
+                </p>
+                <p class="flex justify-center items-center">26/2025</p>
+              </div>
+              <div class="grid grid-cols-6 border-b py-3">
+                <button
+                  type="button"
+                  onclick="window.location.href='https://www.tenderjo.com/Default.aspx?lang=en';"
+                  class="flex justify-center bg-goldForm rounded-sm py-1 px-2">
+                  <a
+                    href="https://www.tenderjo.com/Default.aspx?lang=en"
+                    class="cursor-pointer"
+                    >التفاصيل</a
+                  >
+                </button>
+                <p class="flex justify-center items-center">الوثائق</p>
+                <p class="flex justify-center items-center">2025/04/16</p>
+                <p class="flex justify-center items-center">2025/03/27</p>
+                <p class="flex justify-center items-center text-sm">
+                  انشاء المبنى الاداري
+                </p>
+                <p class="flex justify-center items-center">26/2025</p>
+              </div>
+              <div class="grid grid-cols-6 border-b py-3">
+                <button
+                  type="button"
+                  onclick="window.location.href='https://www.tenderjo.com/Default.aspx?lang=en';"
+                  class="flex justify-center bg-goldForm rounded-sm py-1 px-2">
+                  <a
+                    href="https://www.tenderjo.com/Default.aspx?lang=en"
+                    class="cursor-pointer"
+                    >التفاصيل</a
+                  >
+                </button>
+                <p class="flex justify-center items-center">الوثائق</p>
+                <p class="flex justify-center items-center">2025/04/16</p>
+                <p class="flex justify-center items-center">2025/03/27</p>
+                <p class="flex justify-center items-center text-sm">
+                  انشاء المبنى الاداري
+                </p>
+                <p class="flex justify-center items-center">26/2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block sm:hidden text-center text-sm text-gray-500 mt-2">
+          <p>← اسحب للرؤية الكاملة →</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- انجازاتنا بأرقام  -->
+
+    <section class="w-full" id="achievements">
+      <div class="w-full flex justify-center items-center my-10">
+        <p class="text-2xl font-bold achievementsAnimation">انجازاتنا بأرقام</p>
+      </div>
+      <div class="w-full px-10">
+        <div class="w-full grid sm:grid-cols-5 grid-cols-1 gap-8 mb-10">
+          <div
+            class="w-full h-full py-10 items-center flex flex-col justify-center hover:scale-105 transition-all duration-300 ease-in-out"
+            style="box-shadow: 2px 2px 10px #ceb579">
+            <i class="fa fa-car text-xl text-[#ceb579]" aria-hidden="true"></i>
+            <p class="my-3 font-bold">ادارة السير</p>
+            <p class="text-[#ceb579] font-bold">35%</p>
+          </div>
+          <div
+            class="w-full h-full py-10 items-center flex flex-col justify-center hover:scale-105 transition-all duration-300 ease-in-out"
+            style="box-shadow: 2px 2px 10px #ceb579">
+            <i
+              class="fa fa-users text-xl text-[#ceb579]"
+              aria-hidden="true"></i>
+            <p class="my-3 font-bold">الخدمات العامة</p>
+            <p class="text-[#ceb579] font-bold">83%</p>
+          </div>
+          <div
+            class="w-full h-full py-10 items-center flex flex-col justify-center hover:scale-105 transition-all duration-300 ease-in-out"
+            style="box-shadow: 2px 2px 10px #ceb579">
+            <i class="fa fa-bolt text-xl text-[#ceb579]" aria-hidden="true"></i>
+            <p class="my-3 font-bold">قطاع الطاقة و الكهرباء</p>
+            <p class="text-[#ceb579] font-bold">69%</p>
+          </div>
+          <div
+            class="w-full h-full py-10 items-center flex flex-col justify-center hover:scale-105 transition-all duration-300 ease-in-out"
+            style="box-shadow: 2px 2px 10px #ceb579">
+            <i class="fa fa-tree text-xl text-[#ceb579]" aria-hidden="true"></i>
+            <p class="my-3 font-bold">قطاع الزراعة</p>
+            <p class="text-[#ceb579] font-bold">45%</p>
+          </div>
+          <div
+            class="w-full h-full py-10 items-center flex flex-col justify-center hover:scale-105 transition-all duration-300 ease-in-out"
+            style="box-shadow: 2px 2px 10px #ceb579">
+            <i class="fa fa-tint text-xl text-[#ceb579]" aria-hidden="true"></i>
+            <p class="my-3 font-bold">ادارة السير</p>
+            <p class="text-[#ceb579] font-bold">56%</p>
+          </div>
+        </div>
+        <div class="w-full grid sm:grid-cols-3 grid-cols-1 gap-9 mb-10">
+          <div
+            class="w-full h-full py-10 items-center flex flex-col justify-center hover:scale-105 transition-all duration-300 ease-in-out"
+            style="box-shadow: 2px 2px 10px #ceb579">
+            <i
+              class="fa fa-check-square-o text-xl text-[#ceb579]"
+              aria-hidden="true"></i>
+            <p class="text-[#ceb579] font-bold">88%</p>
+            <p class="my-3 font-bold">نسبة ابلاغات المكتملة</p>
+          </div>
+          <div
+            class="w-full h-full py-10 items-center flex flex-col justify-center hover:scale-105 transition-all duration-300 ease-in-out"
+            style="box-shadow: 2px 2px 10px #ceb579">
+            <i
+              class="fa fa-clock-o text-xl text-[#ceb579]"
+              aria-hidden="true"></i>
+            <p class="text-[#ceb579] font-bold">7 ايام</p>
+            <p class="my-3 font-bold">متوسط زمن معالجة البلاغ</p>
+          </div>
+          <div
+            class="w-full h-full py-10 items-center flex flex-col justify-center hover:scale-105 transition-all duration-300 ease-in-out"
+            style="box-shadow: 2px 2px 10px #ceb579">
+            <i
+              class="fa fa-file-text-o text-xl text-[#ceb579]"
+              aria-hidden="true"></i>
+            <p class="text-[#ceb579] font-bold">3345</p>
+            <p class="my-3 font-bold">بلاغ رقمي تم استلامه</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- التعليقات والاقتراحات -->
+    <section class="feedbacks scroll-mt-24 mb-20" id="feedbacks">
+      <p class="text-[50px] text-center mt-32 mb-8 feedbacksAnimation">
+        الإقتراحات والتعليقات
+      </p>
+
+      <form
+        id="contactForm"
+        class="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-center w-full px-5">
+        <div
+          class="feedBack w-full lg:w-4/6 bg-white p-12 rounded-lg shadow-lg">
+          <!-- Full Name & National ID -->
+          <div class="flex flex-col lg:flex-row-reverse mb-7 w-full">
+            <div class="flex flex-col items-end w-full lg:w-1/2 lg:ml-5">
+              <label for="userName" class="mb-3 text-lg">: الاسم الرباعي</label>
+              <input
+                id="userId"
+                type="text"
+                value="فرح امجد محمود الشلالفة"
+                disabled
+                class="bg-gray-300 rounded-md h-10 w-full text-right cursor-not-allowed" />
+            </div>
+            <div class="flex flex-col items-end w-full lg:w-1/2">
+              <label for="userId" class="mb-3 text-lg">: الرقم الوطني</label>
+              <input
+                value="1234567890123"
+                id="userId"
+                type="text"
+                class="bg-gray-300 rounded-md h-10 w-full text-right" />
+            </div>
+          </div>
+
+          <!-- Email & Phone -->
+          <div class="flex flex-col lg:flex-row-reverse mb-7 w-full">
+            <div class="flex flex-col items-end w-full lg:w-1/2 lg:ml-5">
+              <label for="userEmail" class="mb-3 text-lg"
+                >: البريد الإلكتروني</label
+              >
+              <input
+                id="userEmail"
+                type="email"
+                disabled
+                class="bg-gray-300 rounded-md h-10 w-full text-right cursor-not-allowed" />
+            </div>
+            <div class="flex flex-col items-end w-full lg:w-1/2">
+              <label for="userPhone" class="mb-3 text-lg">: رقم الهاتف</label>
+              <input
+                value="0791234567"
+                id="userPhone"
+                type="text"
+                class="bg-gray-300 rounded-md h-10 w-full text-right" />
+            </div>
+          </div>
+
+          <!-- Location & Sector -->
+          <div class="flex flex-col lg:flex-row-reverse mb-7 w-full">
+            <div class="flex flex-col items-end w-full lg:w-1/2 lg:ml-5">
+              <label for="userLocation" class="mb-3 text-lg"
+                >: (المحافظة والمنطقة) الموقع</label
+              >
+              <input
+                id="userLocation"
+                type="text"
+                class="bg-gray-300 rounded-md h-10 w-full text-right" />
+            </div>
+            <div class="flex flex-col items-end w-full lg:w-1/2">
+              <label for="userSector" class="mb-3 text-lg">: القطاع</label>
+              <select
+                id="userSector"
+                class="bg-gray-300 rounded-md h-10 w-full text-right">
+                <option value="">اختر</option>
+                <option value="الزراعة">الزراعة</option>
+                <option value="المياه">المياه</option>
+                <option value="الخدمات العامة">الخدمات العامة</option>
+                <option value="الكهرباء والطاقة">الكهرباء والطاقة</option>
+                <option value="دائرة السير">دائرة السير</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Comment -->
+          <div class="flex flex-col items-end w-full">
+            <label for="userComment" class="mb-3 text-lg"
+              >: اكتب اقتراحك/ تعليقك</label
+            >
+            <textarea
+              id="userComment"
+              class="bg-gray-300 rounded-md h-28 w-full text-right"></textarea>
+          </div>
+
+          <!-- Submit -->
+          <button
+            type="submit"
+            class="bg-[#ceb579] rounded-md text-white font-bold flex justify-center items-center w-2/5 lg:w-1/5 h-fit py-1 my-1 px-2 mt-3 mx-auto">
+            إرسال
+          </button>
+        </div>
+      </form>
+
+      <!-- Success Popup -->
+      <div
+        id="successPopup"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 hidden">
+        <div
+          class="bg-white rounded-lg shadow-xl p-6 md:p-8 max-w-sm w-full text-center">
+          <div
+            class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100 mb-4">
+            <svg
+              class="h-6 w-6 text-green-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg leading-6 font-medium text-gray-900 mb-2">
+            تم استلام طلبك.
+          </h3>
+          <p class="text-sm text-gray-500 mb-4">شكرا لتواصلك معنا .</p>
+          <button
+            id="closePopupBtn"
+            class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-[#d4af37] text-base font-medium text-white hover:bg-[#b8860b] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#d4af37] sm:text-sm transition duration-150 ease-in-out">
+            OK
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="h-fit bg-neutral-900 text-white">
+      <div class="p-10 grid sm:grid-cols-3 grid-cols-1 gap-3">
+        <div class="grid grid-cols-1 mb-5">
+          <p class="font-bold text-[#CEB579] text-2xl mb-3">إمداد</p>
+          <p class="mb-5 text-white/70">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            enim magni nisi id in consectetur sint est beatae repellendus eius
+            voluptate aspernatur maiores quidem illum amet ut, quis aliquid
+            explicabo.
+          </p>
+          <div class="grid grid-cols-4">
+            <i
+              class="fa fa-instagram w-10 h-10 rounded-full bg-white/5 flex items-center justify-center transition-all duration-300 ease-in-out text-[#e0e0e0] no-underline text-sm border border-white/10 hover:bg-[#d4af37] hover:text-white hover:-translate-y-[5px] hover:shadow-[0_5px_15px_rgba(212,175,55,0.4)]"
+              aria-hidden="true"></i>
+            <i
+              class="fa fa-facebook w-10 h-10 rounded-full bg-white/5 flex items-center justify-center transition-all duration-300 ease-in-out text-[#e0e0e0] no-underline text-sm border border-white/10 hover:bg-[#d4af37] hover:text-white hover:-translate-y-[5px] hover:shadow-[0_5px_15px_rgba(212,175,55,0.4)]"
+              aria-hidden="true"></i>
+            <i
+              class="fa fa-twitter w-10 h-10 rounded-full bg-white/5 flex items-center justify-center transition-all duration-300 ease-in-out text-[#e0e0e0] no-underline text-sm border border-white/10 hover:bg-[#d4af37] hover:text-white hover:-translate-y-[5px] hover:shadow-[0_5px_15px_rgba(212,175,55,0.4)]"
+              aria-hidden="true"></i>
+            <i
+              class="fa fa-linkedin w-10 h-10 rounded-full bg-white/5 flex items-center justify-center transition-all duration-300 ease-in-out text-[#e0e0e0] no-underline text-sm border border-white/10 hover:bg-[#d4af37] hover:text-white hover:-translate-y-[5px] hover:shadow-[0_5px_15px_rgba(212,175,55,0.4)]"
+              aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="flex flex-col items-start sm:items-center mb-5">
+          <div class="">
+            <p class="text-lg font-medium pb-2">روابط سريعة</p>
+            <div class="w-10 h-[3px] rounded-md bg-[#CEB579] mb-3"></div>
+          </div>
+          <div class="grid grid-cols-1">
+            <p
+              class="mb-3 text-white/70 no-underline text-sm transition-all duration-300 ease-in-out inline-block relative pl-[15px] hover:text-[#d4af37] hover:translate-x-[5px] before:content-['›'] before:absolute before:left-0 before:text-[#d4af37] before:transition-all before:duration-300 before:ease-in-out hover:before:translate-x-[3px]">
+              <a href="#reportss">بلاغات عامة</a>
+            </p>
+            <p
+              class="mb-3 text-white/70 no-underline text-sm transition-all duration-300 ease-in-out inline-block relative pl-[15px] hover:text-[#d4af37] hover:translate-x-[5px] before:content-['›'] before:absolute before:left-0 before:text-[#d4af37] before:transition-all before:duration-300 before:ease-in-out hover:before:translate-x-[3px]">
+              <a href="#services">دليل الخدمات</a>
+            </p>
+            <p
+              class="mb-3 text-white/70 no-underline text-sm transition-all duration-300 ease-in-out inline-block relative pl-[15px] hover:text-[#d4af37] hover:translate-x-[5px] before:content-['›'] before:absolute before:left-0 before:text-[#d4af37] before:transition-all before:duration-300 before:ease-in-out hover:before:translate-x-[3px]">
+              <a href="#achievements">انجازاتنا</a>
+            </p>
+            <p
+              class="mb-3 text-white/70 no-underline text-sm transition-all duration-300 ease-in-out inline-block relative pl-[15px] hover:text-[#d4af37] hover:translate-x-[5px] before:content-['›'] before:absolute before:left-0 before:text-[#d4af37] before:transition-all before:duration-300 before:ease-in-out hover:before:translate-x-[3px]">
+              <a href="">تواصل معنا</a>
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 mb-5">
+          <div class="">
+            <p class="text-lg font-medium pb-2">اتصل بنا</p>
+            <div class="w-10 h-[3px] rounded-md bg-[#CEB579] mb-3"></div>
+          </div>
+          <div class="text-white/70">
+            <p class="mb-3">
+              <i class="fa fa-map-marker mr-3" aria-hidden="true"></i>
+
+              Khalda Amman, 11953 Jordan
+            </p>
+
+            <p class="mb-3">
+              <i class="fa fa-mobile mr-3" aria-hidden="true"></i> +962 79 999
+              9999
+            </p>
+            <p class="mb-3">
+              <i class="fa fa-envelope-o mr-3" aria-hidden="true"></i>
+              emdad@gmail.com
+            </p>
+          </div>
+          <div class="">
+            <p class="text-lg font-medium pb-2">اخر التحديثات</p>
+            <div class="w-10 h-[3px] rounded-md bg-[#CEB579] mb-3"></div>
+          </div>
+          <div class="relative">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="w-full py-[14px] px-5 border-none bg-white/5 rounded-full text-white text-sm shadow-[inset_0_0_0_1px_rgba(255,255,255,0.1)] transition-all duration-300 ease-in-out focus:outline-none focus:shadow-[inset_0_0_0_1px_#d4af37,_0_0_0_3px_rgba(212,175,55,0.2)] focus:bg-white/[.08] placeholder-white/40" />
+            <button
+              type="submit"
+              class="absolute right-[5px] top-[5px] h-[calc(100%-10px)] bg-[#CEB579] border-none px-5 text-white rounded-[25px] cursor-pointer transition-all duration-300 ease-in-out font-semibold hover:bg-[#b8860b] hover:shadow-[0_5px_15px_rgba(212,175,55,0.4)]">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-[2px] bg-[#CEB579]"></div>
+      <div
+        class="sm:grid sm:grid-cols-12 grid-cols-1 pt-5 p-10 w-full flex flex-col justify-between items-center">
+        <p class="col-span-7 text-white/70 mb-2">
+          2025 EMDAD. All rights reserved.
+        </p>
+        <div class="col-span-5 grid sm:grid-cols-3 grid-cols-1 text-white/70">
+          <p class="mb-2">Privacy Policy</p>
+          <p class="mb-2">Termp of service</p>
+          <p class="mb-2">Cookie Policy</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./template_home.js"></script>
+    <script src="./service_home.js"></script>
+    <script src="./report_home.js"></script>
+    <!-- <script src="./contact.js"></script> -->
+    <script>
+      const contactForm = document.getElementById("contactForm");
+      const successPopup = document.getElementById("successPopup");
+      const closePopupBtn = document.getElementById("closePopupBtn");
+
+      // Input fields
+      // const nationalIdInput = document.getElementById("userId");
+      const phoneInput = document.getElementById("userPhone");
+      const locationInput = document.getElementById("userLocation");
+      const sectorInput = document.getElementById("userSector");
+      const commentInput = document.getElementById("userComment");
+
+      // Error message placeholders
+      // const nationalIdError = document.getElementById("userIdError");
+      const phoneError = document.getElementById("userPhoneError");
+      const locationError = document.getElementById("userLocationError");
+      const sectorError = document.getElementById("userSectorError");
+      const commentError = document.getElementById("userCommentError");
+
+      contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        let formIsValid = true;
+
+        // Helper function to set field as invalid
+        function setInvalid(inputElement, errorElement, errorMessage) {
+          // Add a prominent red border. Remove any existing border classes first if necessary.
+          inputElement.classList.remove("border-gray-300"); // If it had a default border
+          inputElement.classList.add("border-2", "border-red-500");
+          if (errorElement) errorElement.textContent = errorMessage;
+          formIsValid = false;
+        }
+
+        // Helper function to set field as valid
+        function setValid(inputElement, errorElement) {
+          inputElement.classList.remove("border-2", "border-red-500");
+          // Optionally add back a default border if your original design had one and it got removed
+          // inputElement.classList.add('border-gray-300'); // Or remove if not needed
+          if (errorElement) errorElement.textContent = "";
+        }
+
+        // --- Validation Checks ---
+
+        if (!locationInput.value.trim()) {
+          setInvalid(locationInput, locationError, "الرجاء إدخال الموقع.");
+        } else {
+          setValid(locationInput, locationError);
+        }
+
+        if (!sectorInput.value) {
+          setInvalid(sectorInput, sectorError, "الرجاء اختيار القطاع.");
+        } else {
+          setValid(sectorInput, sectorError);
+        }
+
+        if (!commentInput.value.trim()) {
+          setInvalid(
+            commentInput,
+            commentError,
+            "الرجاء كتابة اقتراحك أو تعليقك."
+          );
+        } else if (commentInput.value.trim().length < 10) {
+          setInvalid(
+            commentInput,
+            commentError,
+            "يجب أن يكون التعليق 10 أحرف على الأقل."
+          );
+        } else {
+          setValid(commentInput, commentError);
+        }
+
+        if (formIsValid) {
+          console.log("✅ Form is valid. Showing success popup.");
+          successPopup.classList.remove("hidden");
+          successPopup.classList.add("flex");
+          contactForm.reset();
+
+          [
+            nationalIdInput,
+            phoneInput,
+            locationInput,
+            sectorInput,
+            commentInput,
+          ].forEach((input) => {
+            const errorEl = document.getElementById(input.id + "Error");
+            setValid(input, errorEl);
+          });
+        } else {
+          console.log("❌ Form is invalid. Please fix the highlighted fields.");
+        }
+      });
+
+      closePopupBtn.addEventListener("click", () => {
+        successPopup.classList.add("hidden");
+        successPopup.classList.remove("flex");
+      });
+
+      successPopup.addEventListener("click", (e) => {
+        if (e.target === successPopup) {
+          successPopup.classList.add("hidden");
+          successPopup.classList.remove("flex");
+        }
+      });
+    </script>
+
+    <script>
+      // use a script tag or an external JS file
+      document.addEventListener("DOMContentLoaded", (event) => {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.utils
+          .toArray([
+            ".sevicesAnimation",
+            ".reportsAnimation",
+            ".myReportsAnimation",
+            ".tendersAnimation",
+            ".feedbacksAnimation",
+            ".achievementsAnimation",
+          ])
+          .forEach((element) => {
+            gsap.fromTo(
+              element,
+              {
+                y: 100,
+                opacity: 0,
+              },
+              {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                scrollTrigger: {
+                  trigger: element,
+                  start: "top 80%",
+                  once: true,
+                },
+              }
+            );
+          });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  </body>
+</html>

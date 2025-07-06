@@ -1,0 +1,558 @@
+﻿@model Emdad.Areas.Admin.ViewModels.AdminManageViewModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categories</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap"
+    rel="stylesheet" />
+    <!-- chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="~/assets/src/output.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="shadow-md bg-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-10 py-3">
+            <div class="flex items-center justify-between">
+                <button id="menu-toggle"
+                class="sm:hidden text-goldForm focus:outline-none">
+                    <svg class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                <ul class="hidden sm:flex sm:items-center gap-8 text-base">
+                    <li>
+                        <a href="./loginSuperAdmin.html" class="hover:text-goldForm">
+                            الادارة العامة
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="Home" asp-action="Index" class="hover:text-goldForm font-bold">إحصاءات عامة</a>
+                    </li>
+                </ul>
+                <a asp-controller="AdminAccount" asp-action="Logout"
+   class="bg-red-500 hover:bg-red-600 text-white font-medium px-4 py-2 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-red-300">
+   تسجيل خروج
+</a>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="sm:hidden hidden mt-4 space-y-2">
+                <a href="./dashboard.html"
+                class="block px-4 py-2 rounded hover:bg-gray-100 font-bold">
+                    إحصاءات عامة
+                </a>
+                <a href="./loginSuperAdmin.html"
+                class="block px-4 py-2 rounded hover:bg-gray-100">القطاعات</a>
+            </div>
+        </div>
+    </nav>
+    <section class="mx-10 mt-10" dir="rtl">
+        <p class="sm:text-xl text-sm text-goldForm font-medium mb-10">
+            الادارة العامة
+        </p>
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50 text-right" dir="rtl">
+                    <tr>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            الرقم
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            اسم المدير
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            رقم الهاتف
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            القسم
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            اخر نشاط
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            الحالة
+                        </th>
+
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            الاجراءات
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200"
+                id="submissionsTable">
+
+                    @foreach (var admin in Model.Admins)
+                    {
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">#@admin.AdminId</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">@admin.FullName</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">@admin.PhoneNumber</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                <form asp-action="ChangeSector" method="post">
+                                    <input type="hidden" name="adminId" value="@admin.AdminId" />
+                                    <select id="detailStatus" name="sectorId" onchange="this.form.submit()" class="mt-1 block w-fit py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                        @foreach (var sector in Model.AllSectors)
+                                        {
+                                            var selectedAttr = sector.SectorsId == admin.AssignedSectorId ? "selected" : "";
+
+                                            @:<option value="@sector.SectorsId" @selectedAttr>@sector.SectorsName</option>
+
+                                        }
+                                    </select>
+                                </form>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                @admin.LastActiveAt?.ToString("dd MMM yyyy, hh:mm tt")
+                            </td>
+                            <td>
+                                <span class="badge @(admin.IsStopped ? "px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-200 text-red-800" : admin.IsActive ? "px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800" : "px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800")">
+                                    @(admin.IsStopped ? "موقوف" : admin.IsActive ? "نشط" : "غير نشط")
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <form asp-action="ToggleStatus" method="post" class="inline">
+                                    <input type="hidden" name="adminId" value="@admin.AdminId" />
+                                    <button name="toggle" value="active">🔁 نشط</button>
+                                    <button name="toggle" value="stop">⛔ وقف</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                            #0003
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                            عمر زيدان
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                            0790000000
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                            <select id="detailStatus"
+                            class="mt-1 block w-fit py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option value="New">قطاع الزراعة</option>
+                                <option value="In Progress">قطاع الكهرباء والطاقة</option>
+                                <option value="Resolved">الخدمات العامة</option>
+                                <option value="Closed">دائرة السير</option>
+                                <option selected value="Rejected">قطاع المياه</option>
+                            </select>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                            ٢٨ أيار ٢٠٢٥، الساعة ٣:١٠ صباحًا
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                نشط
+                            </span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                            <i class="fa fa-eye cursor-pointer text-xl text-[#0e1ad6] mr-3"
+                            aria-hidden="true"></i>
+
+                            <i class="fa fa-ban cursor-pointer text-xl text-red-600 mr-3"
+                            aria-hidden="true"></i>
+                            <i class="fa fa-pencil-square-o cursor-pointer text-xl text-[#e8cc00] mr-3 font-bold"
+                            aria-hidden="true"></i>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="mx-10 mt-10" dir="rtl">
+        <p class="sm:text-xl text-sm text-goldForm font-medium mb-10">
+            البلاغات العامة
+        </p>
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50 text-right" dir="rtl">
+                    <tr>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            الرقم
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            الاسم
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            القسم
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            الخدمة
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            الوقت والتاريخ
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            الحالة
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            الاجراءات
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200"
+                id="submissionsTable">
+                    @foreach (var item in Model.ListPublicSubmission) { 
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                #@item.PublicSubmissionId
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                @item.PublicSubmissionFullName
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                البلاغات العامة
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                تعتمد على طلب المستخدم
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                @item.CreateDate
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                    جديد
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <button class="text-goldForm hover:font-extrabold view-detail mr-3 font-bold"
+                                data-id="@item.PublicSubmissionId"
+                                data-name="@item.PublicSubmissionFullName"
+                                data-nationalid="@item.CitizenNationalId"
+                                data-phone="@item.PublicSubmissionPhone"
+                                data-email="@item.CitizenEmail"
+                                data-location="@item.PublicSubmissionLocation"
+                                data-date="@item.CreateDate"
+                                data-description="@item.PublicSubmissionDescription"
+                                data-assignedSectorId="@item.AssignedSectorId"
+                                >
+                                    التفاصيل
+                                </button>
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="mx-10 mt-10 mb-20" dir="rtl">
+        <p class="sm:text-xl text-sm text-goldForm font-medium mb-10">
+            الاقتراحات والتعليقات
+        </p>
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50 text-right" dir="rtl">
+                    <tr>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            الرقم
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            الاسم
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            القسم
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            الخدمة
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            الموقع
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            الوقت والتاريخ
+                        </th>
+                        <th scope="col"
+                        class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            رقم الهاتف
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200"
+                id="submissionsTable">
+                    @foreach (var item in Model.ListFeedbackAndSuggestion) { 
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                            #@item.FeedbackAndSuggestionId
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                            @item.CitizenFullName
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                            @item.SectorsName
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                            @item.FeedbackAndSuggestionsDescription 
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                            @item.FeedbackAndSuggestionsLocation
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                            @item.CreateDate
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                            @item.FeedbackAndSuggestionsPhone
+                        </td>
+                    </tr>
+                                 }
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <div id="detailModal"
+         class="fixed inset-0 bg-gray-600 bg-opacity-75 flex items-center justify-center hidden z-50 text-right"
+         dir="rtl">
+        <div class="bg-white rounded-lg shadow-xl max-w-4xl w-full max-h-screen overflow-y-auto">
+            <div class="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
+                <h3 class="text-lg font-medium text-gray-900">نموذج التقديم</h3>
+                <button id="closeDetailModal"
+                        class="text-gray-400 hover:text-gray-500">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="px-6 py-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <label class="block text-sm font-bold text-gray-700">الاسم :</label>
+                            <div id="detailName" class="text-sm text-gray-900">
+                               
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <label class="block text-sm font-bold text-gray-700">الرقم الوطني</label>
+                            <div id="detailNationalId" class="mt-1 text-sm text-gray-900">
+                                20001231234
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <label class="block text-sm font-bold text-gray-700">رقم الهاتف</label>
+                            <div id="detailPhone" class="mt-1 text-sm text-gray-900">
+                                0790000000
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <label class="block text-sm font-bold text-gray-700">البريد الالكتروني</label>
+                            <div id="detailEmail" class="mt-1 text-sm text-gray-900">
+                                omar@gmail.com
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <label class="block text-sm font-bold text-gray-700">الموقع</label>
+                            <div id="detailLocation" class="mt-1 text-sm text-gray-900">
+                                عمان , تلاع العلي
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <label class="block text-sm font-bold text-gray-700">القسم</label>
+                           @*  <select id="detailStatus"
+                                    class="mt-1 block w-fit py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <option value="New">قطاع الزراعة</option>
+                                <option value="In Progress">قطاع الكهرباء والطاقة</option>
+                                <option selected value="Resolved">الخدمات العامة</option>
+                                <option value="Closed">دائرة السير</option>
+                                <option value="Rejected">قطاع المياه</option>
+                            </select> *@
+                           <div id="submissionDropdowns"></div>
+                           <script>
+    
+                           </script>
+                           
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <label class="block text-sm font-bold text-gray-700">الخدمة</label>
+                            <div id="detailService" class="mt-1 text-sm text-gray-900">
+                                تعتمد على طلب المستخدم
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <label class="block text-sm font-bold text-gray-700">وقت وتاريخ الطلب</label>
+                            <div id="detailDateTime" class="mt-1 text-sm text-gray-900">
+                                ٢٨ أيار ٢٠٢٥، الساعة ٣:١٠ صباحًا
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <label class="block text-sm font-bold text-gray-700">الحالة</label>
+                            <div id="detailCategory" class="mt-1 text-sm text-gray-900">
+                                قيد التنفيذ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <label class="block text-sm font-bold text-gray-700">الوصف</label>
+                    <div id="detailDescription"
+                         class="mt-1 text-sm text-gray-900 p-3 bg-gray-50 rounded-md max-h-32 overflow-y-auto">
+                        وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف
+                        وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف
+                        وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف
+                        وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف
+                        وصف وصف
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <label class="block text-sm font-bold text-gray-700">Photos</label>
+                    <div id="detailPhotos" class="mt-1 grid grid-cols-3 gap-2"></div>
+                </div>
+
+                <div class="mt-4">
+                    <label class="block text-sm font-bold text-gray-700">تعليقات الادارة العامة</label>
+                    <div id="commentsContainer"
+                         class="mt-1 space-y-2 max-h-32 overflow-y-auto p-2 bg-gray-50 rounded-md">
+                        لا يوجد تعليقات
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <label for="newComment"
+                           class="block text-sm font-bold text-gray-700">اضافة تعليق</label>
+                    <textarea id="newComment"
+                              rows="3"
+                              class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                              placeholder="اكتب تعليقك هنا..."></textarea>
+                </div>
+            </div>
+            @* <div id="btndev" class="px-6 py-4 border-t border-gray-200 flex justify-end">
+                
+            </div> *@
+        </div>
+    </div>
+    
+    <script>
+        const sectors = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.AllSectors));
+
+const viewDetailButtons = document.querySelectorAll(".view-detail");
+const detailModal = document.getElementById("detailModal");
+const closeDetailModal = document.getElementById("closeDetailModal");
+const saveChangesButton = document.getElementById("saveChanges");
+
+viewDetailButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+      document.getElementById("detailName").textContent = button.dataset.name || "";
+      document.getElementById("detailNationalId").textContent = button.dataset.nationalid || "";
+      document.getElementById("detailPhone").textContent = button.dataset.phone || "";
+      document.getElementById("detailEmail").textContent = button.dataset.email || "";
+      document.getElementById("detailLocation").textContent = button.dataset.location || "";
+      document.getElementById("detailService").textContent = button.dataset.service || "";
+      document.getElementById("detailDateTime").textContent = button.dataset.date || "";
+      document.getElementById("detailCategory").textContent = button.dataset.category || "";
+      document.getElementById("detailDescription").textContent = button.dataset.description || "";
+     
+
+      const assignedSectorId = parseInt(button.dataset.assignedsectorid);
+      const container = document.getElementById("submissionDropdowns");
+      container.innerHTML = ""; // clear old forms
+
+      const form = document.createElement("form");
+      form.method = "post";
+      form.action = "AssignSector";
+
+      const hiddenInput = document.createElement("input");
+      hiddenInput.type = "hidden";
+      hiddenInput.name = "submissionId";
+      hiddenInput.value = button.dataset.id;
+      form.appendChild(hiddenInput);
+
+      const select = document.createElement("select");
+      select.name = "sectorId";
+      select.className = "mt-1 block w-fit py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm";
+      select.onchange = () => form.submit();
+//       const saveButton = document.createElement("button");
+// saveButton.type = "submit";
+// saveButton.className = "inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500";
+// saveButton.textContent = "حفظ التعديلات";
+// const buttonContainer = document.createElement("div");
+// buttonContainer.className = "px-6 py-4 border-t border-gray-200 flex justify-end";
+// buttonContainer.appendChild(saveButton);
+
+// // 6. Add everything
+// form.appendChild(buttonContainer);
+
+      sectors.forEach(sector => {
+          const option = document.createElement("option");
+          option.value = sector.SectorsId;
+          option.textContent = sector.SectorsName;
+              if (sector.SectorsId === assignedSectorId) {
+        option.selected = true;
+    }
+         
+          select.appendChild(option);
+      });
+
+      form.appendChild(select);
+      container.appendChild(form);
+
+      detailModal.classList.remove("hidden");
+  });
+});
+
+closeDetailModal.addEventListener("click", () => {
+  detailModal.classList.add("hidden");
+});
+
+saveChangesButton.addEventListener("click", () => {
+  showNotification("تم حفظ التعديلات");
+  detailModal.classList.add("hidden");
+});
+
+function showNotification(message) {
+  const notification = document.createElement("div");
+  notification.className =
+    "fixed bottom-4 right-4 bg-green-500 text-white px-4 py-2 rounded shadow-lg z-50 transition-opacity duration-300";
+  notification.textContent = message;
+  document.body.appendChild(notification);
+
+  setTimeout(() => {
+    notification.style.opacity = "0";
+    setTimeout(() => {
+      if (document.body.contains(notification)) {
+        document.body.removeChild(notification);
+      }
+    }, 300);
+  }, 3000);
+}
+
+    </script>
+    <script src="~/assets/dist/nav.js"></script>
+</body>
+</html>

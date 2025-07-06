@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Emdad.Models;
 
 public partial class PublicSubmission : BaseEntity
 {
     public int PublicSubmissionId { get; set; }
-    public int CitizenId { get; set; }
 
     public string CitizenNationalId { get; set; }
 
@@ -19,5 +19,8 @@ public partial class PublicSubmission : BaseEntity
     public string PublicSubmissionLocation { get; set; }
 
     public string PublicSubmissionDescription { get; set; }
-    public Citizen Citizen { get; set; }
+    public int? AssignedSectorId { get; set; }
+
+    [ForeignKey("AssignedSectorId")]
+    public Sectors Sector { get; set; }
 }

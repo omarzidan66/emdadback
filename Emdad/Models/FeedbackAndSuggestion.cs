@@ -17,9 +17,7 @@ public partial class FeedbackAndSuggestion : BaseEntity
 
     public string FeedbackAndSuggestionsLocation { get; set; }
 
-    public string FeedbackAndSuggestionsSector { get; set; }
+    public string SectorsName { get; set; }
 
     public string FeedbackAndSuggestionsDescription { get; set; }
-    public SectorsServices SectorsServices { get; set; }
-    public Citizen Citizen { get; set; }
 }

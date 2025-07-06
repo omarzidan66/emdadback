@@ -11,10 +11,9 @@ public partial class SectorsServices : BaseEntity
 
     public string SectorsServicesType { get; set; }
 
-    public string SectorsServicesLink { get; set; } 
-
+    public string SectorsServicesLink { get; set; }
+    
     public int SectorsId { get; set; }
 
-    public string SectorsName { get; set; } 
-    public Sectors Sectors { get; set; } = null!;
+    public Sectors? Sectors { get; set; } 
 }

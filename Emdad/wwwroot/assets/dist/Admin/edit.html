@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap"
+      rel="stylesheet" />
+    <!-- chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="../../../src/output.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Admin Dashboard - Form Management</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 min-h-screen">
+    <nav class="bg-indigo-600 shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+              <span class="text-white font-bold text-xl">Admin Dashboard</span>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <span class="text-white mr-4">Admin User</span>
+            <img
+              class="h-8 w-8 rounded-full"
+              src="https://via.placeholder.com/40"
+              alt="Admin profile" />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+      <div class="px-4 py-6 sm:px-0">
+        <div class="flex justify-between items-center mb-6">
+          <h1 class="text-2xl font-semibold text-gray-900">
+            Form Submissions Management
+          </h1>
+          <div class="flex space-x-3">
+            <div class="relative">
+              <input
+                type="text"
+                id="search"
+                placeholder="Search submissions..."
+                class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+              <i class="fas fa-search absolute right-3 top-3 text-gray-400"></i>
+            </div>
+            <select
+              id="filterCategory"
+              class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+              <option value="">All Categories</option>
+              <option value="Complaint">Complaint</option>
+              <option value="Request">Request</option>
+              <option value="Feedback">Feedback</option>
+              <option value="Inquiry">Inquiry</option>
+            </select>
+            <select
+              id="filterStatus"
+              class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+              <option value="">All Statuses</option>
+              <option value="New">New</option>
+              <option value="In Progress">In Progress</option>
+              <option value="Resolved">Resolved</option>
+              <option value="Closed">Closed</option>
+              <option value="Rejected">Rejected</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+          <div class="bg-white overflow-hidden shadow rounded-lg">
+            <div class="px-4 py-5 sm:p-6">
+              <div class="flex items-center">
+                <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                  <i class="fas fa-file-alt text-white"></i>
+                </div>
+                <div class="ml-5">
+                  <div class="text-sm font-medium text-gray-500 truncate">
+                    Total Submissions
+                  </div>
+                  <div class="mt-1 text-3xl font-semibold text-gray-900">
+                    128
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white overflow-hidden shadow rounded-lg">
+            <div class="px-4 py-5 sm:p-6">
+              <div class="flex items-center">
+                <div class="flex-shrink-0 bg-yellow-500 rounded-md p-3">
+                  <i class="fas fa-spinner text-white"></i>
+                </div>
+                <div class="ml-5">
+                  <div class="text-sm font-medium text-gray-500 truncate">
+                    Pending
+                  </div>
+                  <div class="mt-1 text-3xl font-semibold text-gray-900">
+                    42
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white overflow-hidden shadow rounded-lg">
+            <div class="px-4 py-5 sm:p-6">
+              <div class="flex items-center">
+                <div class="flex-shrink-0 bg-green-500 rounded-md p-3">
+                  <i class="fas fa-check-circle text-white"></i>
+                </div>
+                <div class="ml-5">
+                  <div class="text-sm font-medium text-gray-500 truncate">
+                    Resolved
+                  </div>
+                  <div class="mt-1 text-3xl font-semibold text-gray-900">
+                    75
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white overflow-hidden shadow rounded-lg">
+            <div class="px-4 py-5 sm:p-6">
+              <div class="flex items-center">
+                <div class="flex-shrink-0 bg-red-500 rounded-md p-3">
+                  <i class="fas fa-clock text-white"></i>
+                </div>
+                <div class="ml-5">
+                  <div class="text-sm font-medium text-gray-500 truncate">
+                    Urgent
+                  </div>
+                  <div class="mt-1 text-3xl font-semibold text-gray-900">
+                    11
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white shadow overflow-hidden sm:rounded-lg mb-6">
+          <div class="px-4 py-5 border-b border-gray-200 sm:px-6">
+            <h3 class="text-lg leading-6 font-medium text-gray-900">
+              Form Submissions
+            </h3>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th
+                    scope="col"
+                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    ID
+                  </th>
+                  <th
+                    scope="col"
+                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Name
+                  </th>
+                  <th
+                    scope="col"
+                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Category
+                  </th>
+                  <th
+                    scope="col"
+                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Service
+                  </th>
+                  <th
+                    scope="col"
+                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Date & Time
+                  </th>
+                  <th
+                    scope="col"
+                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Status
+                  </th>
+                  <th
+                    scope="col"
+                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Actions
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="bg-white divide-y divide-gray-200"
+                id="submissionsTable">
+                <tr>
+                  <td
+                    class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                    #1
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    John Smith
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    Complaint
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    Water Supply
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    May 10, 2025 9:23 AM
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span
+                      class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                      New
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                    <button
+                      class="text-indigo-600 hover:text-indigo-900 view-detail mr-3"
+                      data-id="1">
+                      View
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                    #2
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    Sarah Johnson
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    Request
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    Road Repair
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    May 9, 2025 2:15 PM
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span
+                      class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
+                      In Progress
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                    <button
+                      class="text-indigo-600 hover:text-indigo-900 view-detail mr-3"
+                      data-id="2">
+                      View
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                    #3
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    Michael Chen
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    Feedback
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    Community Center
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    May 8, 2025 4:45 PM
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span
+                      class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                      Resolved
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                    <button
+                      class="text-indigo-600 hover:text-indigo-900 view-detail mr-3"
+                      data-id="3">
+                      View
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                    #4
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    Emily Wilson
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    Inquiry
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    Building Permit
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    May 11, 2025 10:05 AM
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span
+                      class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                      New
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                    <button
+                      class="text-indigo-600 hover:text-indigo-900 view-detail mr-3"
+                      data-id="4">
+                      View
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                    #5
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    David Lee
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    Complaint
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    Garbage Collection
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    May 7, 2025 8:12 AM
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span
+                      class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
+                      In Progress
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                    <button
+                      class="text-indigo-600 hover:text-indigo-900 view-detail mr-3"
+                      data-id="5">
+                      View
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            class="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6">
+            <div class="flex-1 flex justify-between sm:hidden">
+              <a
+                href="#"
+                class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
+                >Previous</a
+              >
+              <a
+                href="#"
+                class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
+                >Next</a
+              >
+            </div>
+            <div
+              class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
+              <div>
+                <p class="text-sm text-gray-700">
+                  Showing
+                  <span class="font-medium">1</span>
+                  to
+                  <span class="font-medium">5</span>
+                  of
+                  <span class="font-medium">5</span>
+                  results
+                </p>
+              </div>
+              <div>
+                <nav
+                  class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px"
+                  aria-label="Pagination">
+                  <a
+                    href="#"
+                    class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                    <span class="sr-only">Previous</span>
+                    <i class="fas fa-chevron-left"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
+                    >1</a
+                  >
+                  <a
+                    href="#"
+                    class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                    <span class="sr-only">Next</span>
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="detailModal"
+      class="fixed inset-0 bg-gray-600 bg-opacity-75 flex items-center justify-center hidden z-50">
+      <div
+        class="bg-white rounded-lg shadow-xl max-w-4xl w-full max-h-screen overflow-y-auto">
+        <div
+          class="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
+          <h3 class="text-lg font-medium text-gray-900">
+            Form Submission Details
+          </h3>
+          <button
+            id="closeDetailModal"
+            class="text-gray-400 hover:text-gray-500">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="px-6 py-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="space-y-4">
+              <div>
+                <label class="block text-sm font-medium text-gray-700"
+                  >Name</label
+                >
+                <div id="detailName" class="mt-1 text-sm text-gray-900"></div>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700"
+                  >National ID</label
+                >
+                <div
+                  id="detailNationalId"
+                  class="mt-1 text-sm text-gray-900"></div>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700"
+                  >Phone Number</label
+                >
+                <div id="detailPhone" class="mt-1 text-sm text-gray-900"></div>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700"
+                  >Email</label
+                >
+                <div id="detailEmail" class="mt-1 text-sm text-gray-900"></div>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700"
+                  >Location</label
+                >
+                <div
+                  id="detailLocation"
+                  class="mt-1 text-sm text-gray-900"></div>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <div>
+                <label class="block text-sm font-medium text-gray-700"
+                  >Category</label
+                >
+                <div
+                  id="detailCategory"
+                  class="mt-1 text-sm text-gray-900"></div>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700"
+                  >Service</label
+                >
+                <div
+                  id="detailService"
+                  class="mt-1 text-sm text-gray-900"></div>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700"
+                  >Date & Time Submitted</label
+                >
+                <div
+                  id="detailDateTime"
+                  class="mt-1 text-sm text-gray-900"></div>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700"
+                  >Status</label
+                >
+                <select
+                  id="detailStatus"
+                  class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <option value="New">New</option>
+                  <option value="In Progress">In Progress</option>
+                  <option value="Resolved">Resolved</option>
+                  <option value="Closed">Closed</option>
+                  <option value="Rejected">Rejected</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <label class="block text-sm font-medium text-gray-700"
+              >Description</label
+            >
+            <div
+              id="detailDescription"
+              class="mt-1 text-sm text-gray-900 p-3 bg-gray-50 rounded-md max-h-32 overflow-y-auto"></div>
+          </div>
+
+          <div class="mt-4">
+            <label class="block text-sm font-medium text-gray-700"
+              >Photos</label
+            >
+            <div id="detailPhotos" class="mt-1 grid grid-cols-3 gap-2"></div>
+          </div>
+
+          <div class="mt-4">
+            <label class="block text-sm font-medium text-gray-700"
+              >Admin Comments</label
+            >
+            <div
+              id="commentsContainer"
+              class="mt-1 space-y-2 max-h-32 overflow-y-auto p-2 bg-gray-50 rounded-md"></div>
+          </div>
+
+          <div class="mt-4">
+            <label
+              for="newComment"
+              class="block text-sm font-medium text-gray-700"
+              >Add Comment</label
+            >
+            <textarea
+              id="newComment"
+              rows="3"
+              class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              placeholder="Type your comment here..."></textarea>
+          </div>
+        </div>
+        <div class="px-6 py-4 border-t border-gray-200 flex justify-end">
+          <button
+            id="saveChanges"
+            class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            Save Changes
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Sample data for demonstration
+      const sampleData = [
+        {
+          id: 1,
+          name: "John Smith",
+          nationalId: "9876543210",
+          phone: "+1-555-123-4567",
+          email: "john.smith@example.com",
+          category: "Complaint",
+          service: "Water Supply",
+          location: "123 Main Street, Anytown",
+          description:
+            "Water supply has been intermittent for the past week. Sometimes no water for hours.",
+          dateTime: "2025-05-10T09:23:15",
+          status: "New",
+          photos: [
+            "https://via.placeholder.com/120x90",
+            "https://via.placeholder.com/120x90",
+          ],
+          comments: [],
+        },
+        {
+          id: 2,
+          name: "Sarah Johnson",
+          nationalId: "1234567890",
+          phone: "+1-555-987-6543",
+          email: "sarah.j@example.com",
+          category: "Request",
+          service: "Road Repair",
+          location: "456 Oak Avenue, Sometown",
+          description:
+            "Large pothole formed after recent rains, causing traffic hazards.",
+          dateTime: "2025-05-09T14:15:00",
+          status: "In Progress",
+          photos: ["https://via.placeholder.com/120x90"],
+          comments: [
+            {
+              author: "Admin User",
+              text: "Repair team dispatched",
+              date: "2025-05-10T08:30:00",
+            },
+          ],
+        },
+        {
+          id: 3,
+          name: "Michael Chen",
+          nationalId: "5432109876",
+          phone: "+1-555-456-7890",
+          email: "mchen@example.com",
+          category: "Feedback",
+          service: "Community Center",
+          location: "789 Elm Street, Othertown",
+          description:
+            "Great experience at the new community center. Staff was helpful and facilities are clean.",
+          dateTime: "2025-05-08T16:45:22",
+          status: "Resolved",
+          photos: [],
+          comments: [
+            {
+              author: "Admin User",
+              text: "Thank you for your positive feedback!",
+              date: "2025-05-09T09:15:00",
+            },
+            {
+              author: "Admin User",
+              text: "Forwarded to Community Center management",
+              date: "2025-05-09T10:30:00",
+            },
+          ],
+        },
+        {
+          id: 4,
+          name: "Emily Wilson",
+          nationalId: "6789054321",
+          phone: "+1-555-789-0123",
+          email: "",
+          category: "Inquiry",
+          service: "Building Permit",
+          location: "101 Pine Road, Newtown",
+          description:
+            "Looking for information about the process for obtaining a building permit for home renovation.",
+          dateTime: "2025-05-11T10:05:37",
+          status: "New",
+          photos: [],
+          comments: [],
+        },
+        {
+          id: 5,
+          name: "David Lee",
+          nationalId: "3216549870",
+          phone: "+1-555-321-6540",
+          email: "d.lee@example.com",
+          category: "Complaint",
+          service: "Garbage Collection",
+          location: "222 Maple Drive, Uptown",
+          description:
+            "Garbage not collected on scheduled day (Tuesday) for two consecutive weeks.",
+          dateTime: "2025-05-07T08:12:59",
+          status: "In Progress",
+          photos: [
+            "https://via.placeholder.com/120x90",
+            "https://via.placeholder.com/120x90",
+          ],
+          comments: [
+            {
+              author: "Admin User",
+              text: "Contacted waste management department",
+              date: "2025-05-08T11:20:00",
+            },
+          ],
+        },
+      ];
+
+      // DOM Elements
+      const submissionsTable = document.getElementById("submissionsTable");
+      const detailModal = document.getElementById("detailModal");
+      const closeDetailModalBtn = document.getElementById("closeDetailModal");
+      const saveChangesBtn = document.getElementById("saveChanges");
+      // Search and filter inputs are not used by the current JS
+      // const searchInput = document.getElementById("search");
+      // const filterCategory = document.getElementById("filterCategory");
+      // const filterStatus = document.getElementById("filterStatus");
+
+      // Current selected submission ID - this would be needed if modal population logic is restored
+      // let currentSubmissionId = null;
+
+      // Function to populate the table with data
+      // NOTE: This function, as provided, will clear the HTML table rows and recreate them.
+      function populateTable(data) {
+        submissionsTable.innerHTML = ""; // This line will clear the static HTML table above.
+
+        if (data.length === 0) {
+          const emptyRow = document.createElement("tr");
+          emptyRow.innerHTML = `
+                                <td colspan="7" class="px-6 py-4 text-center text-gray-500">No submissions found</td>
+                            `;
+          submissionsTable.appendChild(emptyRow);
+          return;
+        }
+
+        data.forEach((submission) => {
+          const row = document.createElement("tr");
+
+          const formattedDate = moment(submission.dateTime).format(
+            "MMM D, YYYY h:mm A"
+          );
+
+          let statusColor = "bg-gray-100 text-gray-800";
+          if (submission.status === "New")
+            statusColor = "bg-blue-100 text-blue-800";
+          else if (submission.status === "In Progress")
+            statusColor = "bg-yellow-100 text-yellow-800";
+          else if (submission.status === "Resolved")
+            statusColor = "bg-green-100 text-green-800";
+          else if (submission.status === "Closed")
+            statusColor = "bg-gray-100 text-gray-800";
+          else if (submission.status === "Rejected")
+            statusColor = "bg-red-100 text-red-800";
+
+          row.innerHTML = `
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">#${submission.id}</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${submission.name}</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${submission.category}</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${submission.service}</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${formattedDate}</td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${statusColor}">
+                                        ${submission.status}
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                    <button class="text-indigo-600 hover:text-indigo-900 view-detail mr-3" data-id="${submission.id}">
+                                        View
+                                    </button>
+                                </td>
+                            `;
+          submissionsTable.appendChild(row);
+        });
+
+        // Add event listeners to view detail buttons
+        document.querySelectorAll(".view-detail").forEach((button) => {
+          button.addEventListener("click", function () {
+            const submissionId = parseInt(this.getAttribute("data-id"));
+            // To make the modal useful, you'd need to find the submission data
+            // and pass it to openDetailModal or populate the modal here.
+            // const submission = sampleData.find(s => s.id === submissionId);
+            openDetailModal(submissionId); // current openDetailModal is simplified
+          });
+        });
+      }
+
+      // Function to open detail modal
+      // NOTE: This function is simplified and won't populate details.
+      function openDetailModal(submissionId) {
+        // To restore functionality, you would find the submission by ID from sampleData
+        // and then populate the modal's #detailName, #detailNationalId, etc. elements.
+        // Example:
+        // const submission = sampleData.find(item => item.id === submissionId);
+        // if (submission) {
+        //   document.getElementById("detailName").textContent = submission.name;
+        //   // ... and so on for other fields, photos, and comments.
+        // }
+        detailModal.classList.remove("hidden");
+      }
+
+      // Function to close detail modal
+      function closeDetailModal() {
+        detailModal.classList.add("hidden");
+      }
+
+      // Function to save changes
+      // NOTE: This function is simplified and won't save data.
+      function saveSubmissionChanges() {
+        // To restore functionality, you would get the new status and new comment,
+        // update the corresponding item in sampleData, re-populate the table (or update the specific row),
+        // and then close the modal.
+        closeDetailModal();
+        showNotification("Changes saved successfully!"); // This notification will still show.
+      }
+
+      // Function to show notification
+      function showNotification(message) {
+        const notification = document.createElement("div");
+        notification.className =
+          "fixed bottom-4 right-4 bg-green-500 text-white px-4 py-2 rounded shadow-lg z-50 transition-opacity duration-300";
+        notification.textContent = message;
+        document.body.appendChild(notification);
+
+        setTimeout(() => {
+          notification.style.opacity = "0";
+          setTimeout(() => {
+            if (document.body.contains(notification)) {
+              document.body.removeChild(notification);
+            }
+          }, 300);
+        }, 3000);
+      }
+
+      // Event listeners
+      closeDetailModalBtn.addEventListener("click", closeDetailModal);
+      saveChangesBtn.addEventListener("click", saveSubmissionChanges);
+
+      // Initialize table with sample data
+      document.addEventListener("DOMContentLoaded", function () {
+        populateTable(sampleData);
+      });
+    </script>
+  </body>
+</html>
