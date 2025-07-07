@@ -57,7 +57,6 @@ namespace Emdad.Controllers
                     return View(collection);
                 }
 
-                // Create user in AspNetUsers (Identity)
                 var identityUser = new IdentityUser
                 {
                     UserName = collection.CitizenNationalId,
@@ -68,21 +67,17 @@ namespace Emdad.Controllers
 
                 if (result.Succeeded)
                 {
-                    // Get the newly created user ID from Identity
                     var userId = identityUser.Id;
 
-                    // Assign the Identity User ID to your custom User table
 
-                    collection.CreateId = userId; // Use the real creator's ID in production
+                    collection.CreateId = userId; 
                     collection.EditId = userId;
 
-                    // Add the user to your custom User table
                     Repository.Add(collection);
 
                     return RedirectToAction(nameof(Index));
                 }
 
-                // If Identity user creation fails, show errors
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError("", error.Description);
@@ -96,7 +91,6 @@ namespace Emdad.Controllers
             }
         }
 
-        // GET: UserController/Edit/5
         public ActionResult Edit(int id)
         {
             return View();

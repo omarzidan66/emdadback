@@ -43,17 +43,7 @@ namespace Emdad.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateAdmin(CreateAdminViewModel model)
         {
-            //if (!ModelState.IsValid)
-            //{
-            //    model.AvailableSectors = context.Sectors
-            //        .Select(s => new SelectListItem
-            //        {
-            //            Value = s.SectorsId.ToString(),
-            //            Text = s.SectorsName
-            //        }).ToList();
-
-            //    return View(model);
-            //}
+            
 
             var identityUser = new IdentityUser
             {
@@ -159,8 +149,7 @@ namespace Emdad.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> SectorLogin(SectorLoginViewModel model)
         {
-            //if (!ModelState.IsValid)
-            //    return View(model);
+            
 
             var user = await UserManager.FindByEmailAsync(model.Email);
             if (user == null)

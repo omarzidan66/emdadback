@@ -7,10 +7,15 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Emdad.Models;
 using Emdad.Models.Repositories;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Http;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Emdad.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "SuperAdmin")]
     public class FormFieldsController : Controller
     {
         private readonly EmdadContext _context;
@@ -23,137 +28,113 @@ namespace Emdad.Areas.Admin.Controllers
         }
 
         // GET: Admin/FormFields
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            var emdadContext = _context.FormFields.Include(f => f.SectorsServices);
-            return View(await emdadContext.ToListAsync());
+
+            return View(FormFieldRepository.View());
+
         }
 
         // GET: Admin/FormFields/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public ActionResult Details(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            var data = _context.FormFields
+                    .Include(f => f.SectorsServices)
+                    .FirstOrDefault(f => f.FormFieldId == id);
 
-            var formField = await _context.FormFields
-                .Include(f => f.SectorsServices)
-                .FirstOrDefaultAsync(m => m.FormFieldId == id);
-            if (formField == null)
-            {
+            if (data == null)
                 return NotFound();
-            }
 
-            return View(formField);
+            return View(data);
         }
 
         // GET: Admin/FormFields/Create
-        public IActionResult Create()
+        public ActionResult Create()
         {
             ViewData["SectorsServicesId"] = new SelectList(_context.SectorsServices, "SectorsServicesId", "SectorsServicesId");
             return View();
         }
 
-        // POST: Admin/FormFields/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("FormFieldId,SectorsServicesId,FormFieldLabel,FormFieldName,FormFieldType,FormFieldIsRequired,IsActive,IsDelete,CreateId,CreateDate,EditId,EditDate")] FormField formField)
+        public ActionResult Create([Bind("FormFieldId,SectorsServicesId,FormFieldLabel,FormFieldName,FormFieldType,FormFieldIsRequired,IsActive,IsDelete,CreateId,CreateDate,EditId,EditDate")] FormField formField)
         {
-            
-                FormFieldRepository.Add(formField);
-                //await FormFieldRepository.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            
+
+            formField.CreateId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+            formField.EditId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            FormFieldRepository.Add(formField);
             ViewData["SectorsServicesId"] = new SelectList(_context.SectorsServices, "SectorsServicesId", "SectorsServicesId", formField.SectorsServicesId);
-            return View(formField);
+
+            return RedirectToAction(nameof(Index));
+
+           
         }
 
         // GET: Admin/FormFields/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public ActionResult Edit(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            var data = FormFieldRepository.Find(id);
+            ViewData["SectorsServicesId"] = new SelectList(
+            _context.SectorsServices,
+            "SectorsServicesId",
+            "SectorsServicesId", // Or replace with a display name field like "SectorName"
+            data.SectorsServicesId // selected value
+        );
 
-            var formField = await _context.FormFields.FindAsync(id);
-            if (formField == null)
-            {
-                return NotFound();
-            }
-            ViewData["SectorsServicesId"] = new SelectList(_context.SectorsServices, "SectorsServicesId", "SectorsServicesId", formField.SectorsServicesId);
-            return View(formField);
+            return View(data);
         }
 
-        // POST: Admin/FormFields/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("FormFieldId,SectorsServicesId,FormFieldLabel,FormFieldName,FormFieldType,FormFieldIsRequired,IsActive,IsDelete,CreateId,CreateDate,EditId,EditDate")] FormField formField)
+        public ActionResult Edit(int id, [Bind("FormFieldId,SectorsServicesId,FormFieldLabel,FormFieldName,FormFieldType,FormFieldIsRequired,IsActive,IsDelete,CreateId,CreateDate,EditId,EditDate")] FormField formField)
         {
-            if (id != formField.FormFieldId)
+            try
             {
-                return NotFound();
-            }
+                formField.EditId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+                ViewData["SectorsServicesId"] = new SelectList(_context.SectorsServices, "SectorsServicesId", "SectorsServicesId", formField.SectorsServicesId);
 
-            
-                try
-                {
-                    _context.Update(formField);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!FormFieldExists(formField.FormFieldId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+                FormFieldRepository.Update(id, formField);
                 return RedirectToAction(nameof(Index));
-            
-            //ViewData["SectorsServicesId"] = new SelectList(_context.SectorsServices, "SectorsServicesId", "SectorsServicesId", formField.SectorsServicesId);
-            return View(formField);
+            }
+            catch
+            {
+                return View();
+            }
         }
 
         // GET: Admin/FormFields/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public IActionResult Delete(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var formField = await _context.FormFields
-                .Include(f => f.SectorsServices)
-                .FirstOrDefaultAsync(m => m.FormFieldId == id);
+            var formField = FormFieldRepository.Find(id);
             if (formField == null)
-            {
                 return NotFound();
-            }
 
-            return View(formField);
+            ViewData["SectorsServicesId"] = new SelectList(
+                _context.SectorsServices,
+                "SectorsServicesId",
+                "SectorsServicesId",
+                formField.SectorsServicesId
+            );
+
+            return View(formField); // shows confirmation page
         }
 
-        // POST: Admin/FormFields/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public IActionResult DeleteConfirmed(int id)
         {
-            var formField = await _context.FormFields.FindAsync(id);
-            if (formField != null)
-            {
-                _context.FormFields.Remove(formField);
-            }
+            var formField = _context.FormFields.Find(id);
+            if (formField == null)
+                return NotFound();
 
-            await _context.SaveChangesAsync();
+            formField.EditId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            FormFieldRepository.Delete(id, formField);
+
+
             return RedirectToAction(nameof(Index));
         }
 

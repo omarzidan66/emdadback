@@ -3,87 +3,69 @@
 @{
     ViewData["Title"] = "Index";
 }
+<header>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
+<title>Sectors</title>
+</header>
+<p class="m-5">
+    <a asp-action="Create" class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800">Create New</a>
 </p>
-<table class="table">
-    <thead>
+
+<table class="items-center w-full mb-0 align-top border-collapse  text-slate-500">
+    <thead class="align-bottom">
         <tr>
-            <th>
+            <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none  text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
                 @Html.DisplayNameFor(model => model.SectorsName)
             </th>
-            <th>
+            <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none  text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
                 @Html.DisplayNameFor(model => model.SectorsLink)
             </th>
-            <th>
+            <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none  text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
                 @Html.DisplayNameFor(model => model.SectorIcon)
             </th>
-            <th>
+            <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none  text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
                 @Html.DisplayNameFor(model => model.SectorDesc)
             </th>
-            <th>
+            <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none  text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
                 @Html.DisplayNameFor(model => model.IsActive)
             </th>
-            <th>
+            <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none  text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
                 @Html.DisplayNameFor(model => model.IsDelete)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreateId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreateDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EditId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EditDate)
-            </th>
-            <th></th>
+            
+            <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none  text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">Actions</th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
-            <td>
+        <tr >
+                <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                 @Html.DisplayFor(modelItem => item.SectorsName)
-            </td>
-            <td>
+            </td >
+                <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                 @Html.DisplayFor(modelItem => item.SectorsLink)
             </td>
-            <td>
+                <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                 @Html.DisplayFor(modelItem => item.SectorIcon)
             </td>
-            <td>
+                <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                 @Html.DisplayFor(modelItem => item.SectorDesc)
             </td>
-            <td>
+                <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                 @Html.DisplayFor(modelItem => item.IsActive)
             </td>
-            <td>
+                <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                 @Html.DisplayFor(modelItem => item.IsDelete)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreateId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreateDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EditId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EditDate)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.SectorsId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.SectorsId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.SectorsId">Delete</a>
-            </td>
+
+                <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+                    <a asp-action="Edit" asp-route-id="@item.SectorsId" class="text-yellow-400 hover:text-white border border-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-2 py-2 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.SectorsId" class="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-2 py-2 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.SectorsId" class=" text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-2 py-2 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Delete</a>
+                </td>
         </tr>
 }
     </tbody>
 </table>
+

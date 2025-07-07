@@ -136,25 +136,21 @@ namespace Emdad.Areas.Admin.Controllers
 
                 if (model?.PublicSubmission != null)
                 {
-                    // 1. Get current user ID
                     var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
                     model.PublicSubmission.CreateId = userId;
                     model.PublicSubmission.EditId = userId;
                     var name = User.FindFirst(ClaimTypes.Name)?.Value;
 
 
-                    // 2. Save the PublicSubmission
                     PublicSubmission.Add(model.PublicSubmission);
-                    context.SaveChanges(); // To generate PublicSubmissionId
+                    context.SaveChanges(); 
 
-                    // 4. Create new Submission (leave name for admin later)
                     var newSubmission = new Submission
                     {
                         SubmissionName = name,
                         SubmissionStatus = "مقبول",
                         CreateId = userId,
                         EditId = userId
-                        // No SectorsServicesName now — admin will fill it later
                     };
 
                     Submission.Add(newSubmission);
@@ -165,14 +161,12 @@ namespace Emdad.Areas.Admin.Controllers
                 }
                 if (model?.FeedbackAndSuggestion != null)
                 {
-                    // 1. Get current user ID
                     var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
                     model.FeedbackAndSuggestion.CreateId = userId;
                     model.FeedbackAndSuggestion.EditId = userId;
 
-                    // 2. Save the PublicSubmission
                     FeedbackAndSuggestion.Add(model.FeedbackAndSuggestion);
-                    context.SaveChanges(); // To generate PublicSubmissionId
+                    context.SaveChanges(); 
 
                     TempData["FormSuccess"] = "تم إرسال البلاغ بنجاح.";
                     return RedirectToAction(nameof(Index));

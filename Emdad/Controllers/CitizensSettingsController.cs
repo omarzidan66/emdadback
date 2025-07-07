@@ -70,7 +70,7 @@ namespace Emdad.Controllers
 
             var model = new ChangePasswordViewModel
             {
-                CitizenId = user.Id // Or another unique identifier like NationalId
+                CitizenId = user.Id 
             };
             return View(model);
         }
@@ -83,7 +83,6 @@ namespace Emdad.Controllers
         {
             
 
-            // It's more secure to get the user from the current context rather than the model's CitizenId
             var user = await UserManager.GetUserAsync(User);
             if (user == null)
             {
@@ -105,55 +104,9 @@ namespace Emdad.Controllers
             // Add a success message to display to the user
             TempData["StatusMessage"] = "Your password has been changed successfully.";
 
-            return RedirectToAction(); // Redirect back to the same page or a confirmation page
+            return RedirectToAction(); 
         }
-        //[HttpGet]
-        //public IActionResult ChangePassword()
-        //{
-        //    // Fetch the list of citizens from the database or context
-        //    var citizens = context.CitizensSettings.ToList();  // Or use your specific logic to get the citizens
-
-        //    // Create a ViewModel to hold the citizens data if necessary (e.g., to bind to inputs)
-        //    var model = citizens.Select(citizen => new ChangePasswordViewModel
-        //    {
-        //        CitizenId = citizen.CitizenNationalId,
-        //        // Populate other necessary properties (if any) like CurrentPassword, NewPassword, ConfirmPassword
-        //    }).ToList();
-
-        //    // Pass the model (list of citizens with ChangePasswordViewModel) to the view
-        //    return View(model);
-        //}
-        //[HttpPost]
-        //public async Task<IActionResult> ChangePassword(IFormCollection form)
-        //{
-        //    // Loop through the submitted form data and handle password change for each citizen
-        //    foreach (var citizen in context.CitizensSettings)
-        //    {
-        //        // Get the current, new, and confirm passwords for this citizen
-        //        var currentPassword = form["CurrentPassword_" + citizen.CitizenNationalId];
-        //        var newPassword = form["NewPassword_" + citizen.CitizenNationalId];
-        //        var confirmPassword = form["ConfirmPassword_" + citizen.CitizenNationalId];
-
-        //        // Implement your password change logic here
-        //        var result =  passwordService.ChangePassword(citizen.CitizenNationalId, currentPassword, newPassword, confirmPassword);
-
-        //        if (!result)
-        //        {
-        //            // Handle error, e.g., log or add error to ModelState
-        //            ModelState.AddModelError("", $"Error changing password for Citizen ID {citizen.CitizenNationalId}");
-        //        }
-        //    }
-
-        //    // If the form is valid, redirect to a success page
-        //    if (ModelState.IsValid)
-        //    {
-        //        return RedirectToAction("PasswordChangedSuccess");
-        //    }
-
-        //    // Otherwise, return the same view with error messages
-        //    return View();
-        //}
-        // GET: CitizensSettings/Details/5
+        
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -177,9 +130,7 @@ namespace Emdad.Controllers
             return View();
         }
 
-        // POST: CitizensSettings/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("CitizensSettingsId,CitizenNationalId,CitizenFullName,CitizenEmail,CitizenPhone,CitizenLocation,CitizenAbout,IsActive,IsDelete,CreateId,CreateDate,EditId,EditDate")] CitizensSettings citizensSettings)
@@ -209,9 +160,7 @@ namespace Emdad.Controllers
             return View(citizensSettings);
         }
 
-        // POST: CitizensSettings/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("CitizensSettingsId,CitizenNationalId,CitizenFullName,CitizenEmail,CitizenPhone,CitizenLocation,CitizenAbout,IsActive,IsDelete,CreateId,CreateDate,EditId,EditDate")] CitizensSettings citizensSettings)

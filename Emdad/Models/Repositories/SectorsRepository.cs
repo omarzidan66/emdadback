@@ -50,7 +50,7 @@ namespace Emdad.Models.Repositories
 
         public List<Sectors> View()
         {
-            return db.Sectors.Where(x => x.IsDelete == false).ToList();
+            return db.Sectors.ToList();
         }
 
         public List<Sectors> ViewClient()

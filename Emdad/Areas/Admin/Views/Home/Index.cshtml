@@ -1,5 +1,7 @@
 ﻿@model Emdad.Areas.Admin.ViewModels.HomeModel
-
+@{
+    Layout = "_Layout1";
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -301,7 +303,7 @@
                            asp-controller="AdminAccount"
                            asp-action="SectorLogin"
                            asp-route-sectorId="@item.SectorsId">
-                            test
+                            manage
                         </a>
                     </div>
                 </div>

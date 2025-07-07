@@ -19,7 +19,7 @@ namespace Emdad.Models.Repositories
 
         public void Add(PublicSubmission entity)
         {
-            entity.IsActive = false;
+            entity.IsActive = true;
             entity.IsDelete = false;
             entity.CreateDate = DateTime.Now;
             entity.EditDate = DateTime.Now;

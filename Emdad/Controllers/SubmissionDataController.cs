@@ -42,7 +42,7 @@ namespace Emdad.Controllers
                 SectorsId = service.SectorsId,
                 SectorsServicesName = service.SectorsServicesName,
                 SectorsName = service.Sectors?.SectorsName,
-                SectorsServicesType = service.SectorsServicesType, // ✅ comes from SectorsServices
+                SectorsServicesType = service.SectorsServicesType, 
                 SubmissionName = userName,
                 SubmissionStatus = "مقبول",
                 IsActive = true,
@@ -60,8 +60,7 @@ namespace Emdad.Controllers
 
             foreach (var field in fields)
             {
-                // Check if this field is a file (based on name or type logic)
-                bool isFileField = field.FormFieldName.ToLower().Contains("image") || field.FormFieldType == "file"; // Adapt logic if you have a type column
+                bool isFileField = field.FormFieldName.ToLower().Contains("image") || field.FormFieldType == "file"; 
 
                 if (isFileField)
                 {
@@ -85,7 +84,7 @@ namespace Emdad.Controllers
                         {
                             SubmissionId = submission.SubmissionId,
                             FormFieldId = field.FormFieldId,
-                            SubmissionDataValue = "/Images/" + uniqueFileName, // store relative path
+                            SubmissionDataValue = "/Images/" + uniqueFileName, 
                             IsActive = true,
                             CreateId = userName,
                             CreateDate = DateTime.Now,
@@ -94,10 +93,9 @@ namespace Emdad.Controllers
                         _context.SubmissionData.Add(submissionData);
                     }
 
-                    continue; // skip rest of loop since we already handled this field
+                    continue; 
                 }
 
-                // Regular (non-file) field
                 var value = form[field.FormFieldName];
 
                 if (string.IsNullOrWhiteSpace(value))

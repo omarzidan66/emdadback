@@ -104,14 +104,12 @@ namespace Emdad.Controllers
                     model.PublicSubmission.EditId = userId;
 
 
-                    // 2. Save the PublicSubmission
                     PublicSubmission.Add(model.PublicSubmission);
-                    context.SaveChanges(); // To generate PublicSubmissionId
+                    context.SaveChanges(); 
 
-                    // 4. Create new Submission (leave name for admin later)
                     var newSubmission = new Submission
                     {
-                        SectorsId = 0, // Admin can override this later
+                        SectorsId = 0, 
                         SubmissionName = model.PublicSubmission.PublicSubmissionFullName,
                         SubmissionStatus = "مقبول",
                         CreateId = userId,
@@ -136,7 +134,7 @@ namespace Emdad.Controllers
 
                     // 2. Save the PublicSubmission
                     FeedbackAndSuggestion.Add(model.FeedbackAndSuggestion);
-                    context.SaveChanges(); // To generate PublicSubmissionId
+                    context.SaveChanges(); 
 
                     TempData["FormSuccess"] = "تم إرسال البلاغ بنجاح.";
                     return RedirectToAction(nameof(Index));

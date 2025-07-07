@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Emdad")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae39b83127bebe672deef587dbea4af6297bf6e3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b03d2a09d7ff50e01e043d3b194c628a37586618")]
 [assembly: System.Reflection.AssemblyProductAttribute("Emdad")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Emdad")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

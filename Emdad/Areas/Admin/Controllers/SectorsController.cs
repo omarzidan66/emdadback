@@ -6,41 +6,49 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Emdad.Models;
+using NuGet.Protocol.Core.Types;
+using Emdad.Models.Repositories;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Emdad.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "SuperAdmin")]
     public class SectorsController : Controller
     {
         private readonly EmdadContext _context;
+        public IRepository<Sectors> Sectors { get; set; }
 
-        public SectorsController(EmdadContext context)
+        public SectorsController(EmdadContext context,
+            IRepository<Sectors> _Sectors)
         {
             _context = context;
+            Sectors = _Sectors;
         }
 
         // GET: Admin/Sectors
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            return View(await _context.Sectors.ToListAsync());
+            return View(Sectors.View());
         }
 
-        // GET: Admin/Sectors/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public ActionResult Update_Active(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            Sectors.Active(id);
 
-            var sectors = await _context.Sectors
-                .FirstOrDefaultAsync(m => m.SectorsId == id);
+            return RedirectToAction(nameof(Index));
+        }
+        // GET: Admin/Sectors/Details/5
+        public  ActionResult Details(int id)
+        {
+            var sectors = Sectors.Find(id);
             if (sectors == null)
             {
                 return NotFound();
             }
-
             return View(sectors);
+
         }
 
         // GET: Admin/Sectors/Create
@@ -49,105 +57,56 @@ namespace Emdad.Areas.Admin.Controllers
             return View();
         }
 
-        // POST: Admin/Sectors/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("SectorsId,SectorsName,SectorsLink,SectorIcon,SectorDesc,IsActive,IsDelete,CreateId,CreateDate,EditId,EditDate")] Sectors sectors)
+        public IActionResult Create([Bind("SectorsId,SectorsName,SectorsLink,SectorIcon,SectorDesc,IsActive,IsDelete,CreateId,CreateDate,EditId,EditDate")] Sectors sectors)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(sectors);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(sectors);
+            sectors.CreateId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+            sectors.EditId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            Sectors.Add(sectors);
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Admin/Sectors/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public ActionResult Edit(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var sectors = await _context.Sectors.FindAsync(id);
-            if (sectors == null)
-            {
-                return NotFound();
-            }
-            return View(sectors);
+            var data = Sectors.Find(id);
+            return View(data);
         }
 
-        // POST: Admin/Sectors/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("SectorsId,SectorsName,SectorsLink,SectorIcon,SectorDesc,IsActive,IsDelete,CreateId,CreateDate,EditId,EditDate")] Sectors sectors)
+        public ActionResult Edit(int id, [Bind("SectorsId,SectorsName,SectorsLink,SectorIcon,SectorDesc,IsActive,IsDelete,CreateId,CreateDate,EditId,EditDate")] Sectors sectors)
         {
-            if (id != sectors.SectorsId)
+            try
             {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(sectors);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!SectorsExists(sectors.SectorsId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+                sectors.EditId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+                Sectors.Update(id, sectors);
                 return RedirectToAction(nameof(Index));
             }
-            return View(sectors);
+            catch
+            {
+                return View();
+            }
         }
 
         // GET: Admin/Sectors/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(int id, Sectors sectors)
         {
-            if (id == null)
+            try
             {
-                return NotFound();
+                sectors.EditId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+                Sectors.Delete(id, sectors);
+                return RedirectToAction(nameof(Index));
             }
-
-            var sectors = await _context.Sectors
-                .FirstOrDefaultAsync(m => m.SectorsId == id);
-            if (sectors == null)
+            catch
             {
-                return NotFound();
+                return View();
             }
-
-            return View(sectors);
         }
 
-        // POST: Admin/Sectors/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var sectors = await _context.Sectors.FindAsync(id);
-            if (sectors != null)
-            {
-                _context.Sectors.Remove(sectors);
-            }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
+       
 
         private bool SectorsExists(int id)
         {

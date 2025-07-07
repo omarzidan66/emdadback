@@ -1,4 +1,7 @@
 ﻿@model Emdad.Areas.Admin.ViewModels.AdminManageViewModel
+@{
+    Layout = "_Layout1";
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -139,44 +142,6 @@
                             </td>
                         </tr>
                     }
-                    <tr>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                            #0003
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                            عمر زيدان
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                            0790000000
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                            <select id="detailStatus"
-                            class="mt-1 block w-fit py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                                <option value="New">قطاع الزراعة</option>
-                                <option value="In Progress">قطاع الكهرباء والطاقة</option>
-                                <option value="Resolved">الخدمات العامة</option>
-                                <option value="Closed">دائرة السير</option>
-                                <option selected value="Rejected">قطاع المياه</option>
-                            </select>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                            ٢٨ أيار ٢٠٢٥، الساعة ٣:١٠ صباحًا
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                                نشط
-                            </span>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                            <i class="fa fa-eye cursor-pointer text-xl text-[#0e1ad6] mr-3"
-                            aria-hidden="true"></i>
-
-                            <i class="fa fa-ban cursor-pointer text-xl text-red-600 mr-3"
-                            aria-hidden="true"></i>
-                            <i class="fa fa-pencil-square-o cursor-pointer text-xl text-[#e8cc00] mr-3 font-bold"
-                            aria-hidden="true"></i>
-                        </td>
-                    </tr>
 
                 </tbody>
             </table>
@@ -383,14 +348,7 @@
                     <div class="space-y-4">
                         <div class="grid grid-cols-2 gap-4">
                             <label class="block text-sm font-bold text-gray-700">القسم</label>
-                           @*  <select id="detailStatus"
-                                    class="mt-1 block w-fit py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                                <option value="New">قطاع الزراعة</option>
-                                <option value="In Progress">قطاع الكهرباء والطاقة</option>
-                                <option selected value="Resolved">الخدمات العامة</option>
-                                <option value="Closed">دائرة السير</option>
-                                <option value="Rejected">قطاع المياه</option>
-                            </select> *@
+                        
                            <div id="submissionDropdowns"></div>
                            <script>
     
@@ -424,9 +382,7 @@
                          class="mt-1 text-sm text-gray-900 p-3 bg-gray-50 rounded-md max-h-32 overflow-y-auto">
                         وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف
                         وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف
-                        وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف
-                        وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف وصف
-                        وصف وصف
+                        
                     </div>
                 </div>
 
@@ -452,9 +408,7 @@
                               placeholder="اكتب تعليقك هنا..."></textarea>
                 </div>
             </div>
-            @* <div id="btndev" class="px-6 py-4 border-t border-gray-200 flex justify-end">
-                
-            </div> *@
+            
         </div>
     </div>
     
@@ -497,16 +451,7 @@ viewDetailButtons.forEach((button) => {
       select.name = "sectorId";
       select.className = "mt-1 block w-fit py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm";
       select.onchange = () => form.submit();
-//       const saveButton = document.createElement("button");
-// saveButton.type = "submit";
-// saveButton.className = "inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500";
-// saveButton.textContent = "حفظ التعديلات";
-// const buttonContainer = document.createElement("div");
-// buttonContainer.className = "px-6 py-4 border-t border-gray-200 flex justify-end";
-// buttonContainer.appendChild(saveButton);
 
-// // 6. Add everything
-// form.appendChild(buttonContainer);
 
       sectors.forEach(sector => {
           const option = document.createElement("option");

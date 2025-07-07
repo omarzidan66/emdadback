@@ -1,4 +1,6 @@
 ﻿
+using Microsoft.EntityFrameworkCore;
+
 namespace Emdad.Models.Repositories
 {
     public class FormFieldRepository : IRepository<FormField>
@@ -50,7 +52,7 @@ namespace Emdad.Models.Repositories
 
         public List<FormField> View()
         {
-            return db.FormFields.Where(x => x.IsDelete == false).ToList();
+            return db.FormFields.Include(f => f.SectorsServices).ToList();
         }
 
         public List<FormField> ViewClient()

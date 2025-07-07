@@ -32,7 +32,7 @@ namespace Emdad.Areas.Admin.Controllers
         public ActionResult AdminManage()
         {
             var admins = context.Admins.Include(a => a.Sector).ToList();
-            var sectors = context.Sectors.ToList();
+            var sectors = Sectors.ViewClient();
 
             var model = new AdminManageViewModel
             {

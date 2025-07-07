@@ -45,7 +45,22 @@ builder.Services.Configure<IdentityOptions>(x =>
 // Configure Cookie options
 builder.Services.ConfigureApplicationCookie(options =>
 {
-    options.LoginPath = "/Account/RegisterAndLogin"; // change to your actual login page route
+    options.Events.OnRedirectToLogin = context =>
+    {
+        var request = context.Request;
+
+        // Check if the request is unauthorized
+        if (request.Path.StartsWithSegments("/admin"))
+        {
+            context.Response.Redirect("/admin/AdminAccount/Login");
+        }
+        else
+        {
+            context.Response.Redirect("/Account/RegisterAndLogin");
+        }
+
+        return Task.CompletedTask;
+    };
 });
 builder.Services.AddControllersWithViews(options =>
 {

@@ -1,26 +1,220 @@
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\js\perfect-scrollbar.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\img\down-arrow-dark.svg
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\pages\virtual-reality.html
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\img\small-logos\logo-spotify.svg
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\js\argon-dashboard-tailwind.min.js
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\src\style.css
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\img\shapes\shape-3.svg
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\dist\jquery-3.7.1.min.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\css\argon-dashboard-tailwind.min.css
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\img\shapes\waves-gray.svg
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\js\fixed-plugin.js
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\dist\nav.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\src\styles.css
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\img\small-logos\logo-webdev.svg
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\dist\service_home.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\css\tooltips.css
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\pages\sign-up.html
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\src\owl.theme.default.min.css
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\src\style_home.css
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\css\nucleo-svg.css
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\package-lock.json
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\signin&signup\main.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\img\illustrations\icon-documentation.svg
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\img\shapes\shape-2.svg
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\img\shapes\waves-white.svg
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\dist\contact.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\js\plugins\perfect-scrollbar.min.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\img\down-arrow.svg
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\img\shapes\shape-1.svg
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\js\navbar-collapse.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\tailwind.config.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\js\argon-dashboard-tailwind.js
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\dist\template_pages.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\js\carousel.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\js\nav-pills.js
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\dist\report_home.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\README.md
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\js\plugins\chartjs.min.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\img\small-logos\logo-invision.svg
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\package.json
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\img\shapes\wave-up.svg
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\img\shapes\wave-down.svg
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\img\small-logos\logo-atlassian.svg
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\pages\sign-in.html
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\signin&signup\style.css
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\CHANGELOG.md
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\css\nucleo-icons.css
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\img\shapes\pattern-lines.svg
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\pages\rtl.html
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\pages\billing.html
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\dist\Admin\nav.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\css\perfect-scrollbar.css
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\img\small-logos\logo-xd.svg
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\src\owl.carousel.min.css
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\src\report_home.css
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\js\plugins\Chart.extension.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\js\sidenav-burger.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\index.html
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\js\navbar-sticky.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\js\charts.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\pages\profile.html
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\pages\tables.html
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\src\output.css
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\dist\david-ai.min.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\package.json
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\css\argon-dashboard-tailwind.css
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\dist\template_home.js
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\src\input.css
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\src\service_home.css
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\img\down-arrow-white.svg
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\dist\owl.carousel.min.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\img\small-logos\logo-slack.svg
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\fonts\nucleo-icons.svg
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\docs\documentation.html
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\js\tooltips.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\postcss.config.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\pages\dashboard.html
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\img\small-logos\logo-jira.svg
 C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\assets\tailwind.config.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\build\assets\js\dropdown.js
+C:\Users\ADMIN\OneDrive - University Of Jordan\University\Software\project_add features\Emdad-backend\Emdad\Emdad\wwwroot\Admin\package-lock.json
+wwwroot\Admin\build\assets\css\argon-dashboard-tailwind.css
+wwwroot\Admin\build\assets\css\argon-dashboard-tailwind.min.css
+wwwroot\Admin\build\assets\css\nucleo-icons.css
+wwwroot\Admin\build\assets\css\nucleo-svg.css
+wwwroot\Admin\build\assets\css\perfect-scrollbar.css
+wwwroot\Admin\build\assets\css\tooltips.css
+wwwroot\Admin\build\assets\fonts\nucleo.eot
+wwwroot\Admin\build\assets\fonts\nucleo.ttf
+wwwroot\Admin\build\assets\fonts\nucleo.woff
+wwwroot\Admin\build\assets\fonts\nucleo.woff2
+wwwroot\Admin\build\assets\fonts\nucleo-icons.eot
+wwwroot\Admin\build\assets\fonts\nucleo-icons.svg
+wwwroot\Admin\build\assets\fonts\nucleo-icons.ttf
+wwwroot\Admin\build\assets\fonts\nucleo-icons.woff
+wwwroot\Admin\build\assets\fonts\nucleo-icons.woff2
+wwwroot\Admin\build\assets\img\apple-icon.png
+wwwroot\Admin\build\assets\img\bg1.jpg
+wwwroot\Admin\build\assets\img\bg-profile.jpg
+wwwroot\Admin\build\assets\img\bruce-mars.jpg
+wwwroot\Admin\build\assets\img\carousel-1.jpg
+wwwroot\Admin\build\assets\img\carousel-2.jpg
+wwwroot\Admin\build\assets\img\carousel-3.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved0.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved1.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved10.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved-10.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved11.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved-11.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved11-small.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved12.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved13.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved14.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved19.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved2.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved21.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved3.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved4.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved5.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved5-small.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved6.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved-6.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved6-small.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved7.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved8.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved-8.jpg
+wwwroot\Admin\build\assets\img\curved-images\curved9.jpg
+wwwroot\Admin\build\assets\img\curved-images\white-curved.jpeg
+wwwroot\Admin\build\assets\img\down-arrow.svg
+wwwroot\Admin\build\assets\img\down-arrow-dark.svg
+wwwroot\Admin\build\assets\img\down-arrow-white.svg
+wwwroot\Admin\build\assets\img\favicon.png
+wwwroot\Admin\build\assets\img\home-decor-1.jpg
+wwwroot\Admin\build\assets\img\home-decor-2.jpg
+wwwroot\Admin\build\assets\img\home-decor-3.jpg
+wwwroot\Admin\build\assets\img\icons\flags\AU.png
+wwwroot\Admin\build\assets\img\icons\flags\BR.png
+wwwroot\Admin\build\assets\img\icons\flags\DE.png
+wwwroot\Admin\build\assets\img\icons\flags\GB.png
+wwwroot\Admin\build\assets\img\icons\flags\US.png
+wwwroot\Admin\build\assets\img\illustrations\icon-documentation.svg
+wwwroot\Admin\build\assets\img\illustrations\rocket-white.png
+wwwroot\Admin\build\assets\img\ivana-square.jpg
+wwwroot\Admin\build\assets\img\ivancik.jpg
+wwwroot\Admin\build\assets\img\kal-visuals-square.jpg
+wwwroot\Admin\build\assets\img\logo-ct.png
+wwwroot\Admin\build\assets\img\logo-ct-dark.png
+wwwroot\Admin\build\assets\img\logos\mastercard.png
+wwwroot\Admin\build\assets\img\logos\visa.png
+wwwroot\Admin\build\assets\img\marie.jpg
+wwwroot\Admin\build\assets\img\shapes\pattern-lines.svg
+wwwroot\Admin\build\assets\img\shapes\shape-1.svg
+wwwroot\Admin\build\assets\img\shapes\shape-2.svg
+wwwroot\Admin\build\assets\img\shapes\shape-3.svg
+wwwroot\Admin\build\assets\img\shapes\wave-down.svg
+wwwroot\Admin\build\assets\img\shapes\waves-gray.svg
+wwwroot\Admin\build\assets\img\shapes\waves-white.svg
+wwwroot\Admin\build\assets\img\shapes\wave-up.svg
+wwwroot\Admin\build\assets\img\small-logos\icon-sun-cloud.png
+wwwroot\Admin\build\assets\img\small-logos\logo-atlassian.svg
+wwwroot\Admin\build\assets\img\small-logos\logo-invision.svg
+wwwroot\Admin\build\assets\img\small-logos\logo-jira.svg
+wwwroot\Admin\build\assets\img\small-logos\logo-slack.svg
+wwwroot\Admin\build\assets\img\small-logos\logo-spotify.svg
+wwwroot\Admin\build\assets\img\small-logos\logo-webdev.svg
+wwwroot\Admin\build\assets\img\small-logos\logo-xd.svg
+wwwroot\Admin\build\assets\img\team-1.jpg
+wwwroot\Admin\build\assets\img\team-2.jpg
+wwwroot\Admin\build\assets\img\team-3.jpg
+wwwroot\Admin\build\assets\img\team-4.jpg
+wwwroot\Admin\build\assets\img\theme\angular.jpg
+wwwroot\Admin\build\assets\img\theme\bootstrap.jpg
+wwwroot\Admin\build\assets\img\theme\dribbble.png
+wwwroot\Admin\build\assets\img\theme\dropbox.png
+wwwroot\Admin\build\assets\img\theme\mastercard.png
+wwwroot\Admin\build\assets\img\theme\paypal.png
+wwwroot\Admin\build\assets\img\theme\react.jpg
+wwwroot\Admin\build\assets\img\theme\sketch.jpg
+wwwroot\Admin\build\assets\img\theme\slack.png
+wwwroot\Admin\build\assets\img\theme\spotify.jpeg
+wwwroot\Admin\build\assets\img\theme\tim.png
+wwwroot\Admin\build\assets\img\theme\unass.jpg
+wwwroot\Admin\build\assets\img\theme\visa.png
+wwwroot\Admin\build\assets\img\theme\vue.jpg
+wwwroot\Admin\build\assets\img\vr-bg.jpg
+wwwroot\Admin\build\assets\js\argon-dashboard-tailwind.js
+wwwroot\Admin\build\assets\js\argon-dashboard-tailwind.min.js
+wwwroot\Admin\build\assets\js\carousel.js
+wwwroot\Admin\build\assets\js\charts.js
+wwwroot\Admin\build\assets\js\dropdown.js
+wwwroot\Admin\build\assets\js\fixed-plugin.js
+wwwroot\Admin\build\assets\js\navbar-collapse.js
+wwwroot\Admin\build\assets\js\navbar-sticky.js
+wwwroot\Admin\build\assets\js\nav-pills.js
+wwwroot\Admin\build\assets\js\perfect-scrollbar.js
+wwwroot\Admin\build\assets\js\plugins\Chart.extension.js
+wwwroot\Admin\build\assets\js\plugins\chartjs.min.js
+wwwroot\Admin\build\assets\js\plugins\perfect-scrollbar.min.js
+wwwroot\Admin\build\assets\js\sidenav-burger.js
+wwwroot\Admin\build\assets\js\tooltips.js
+wwwroot\Admin\build\docs\documentation.html
+wwwroot\Admin\build\index.html
+wwwroot\Admin\build\pages\billing.html
+wwwroot\Admin\build\pages\dashboard.html
+wwwroot\Admin\build\pages\profile.html
+wwwroot\Admin\build\pages\rtl.html
+wwwroot\Admin\build\pages\sign-in.html
+wwwroot\Admin\build\pages\sign-up.html
+wwwroot\Admin\build\pages\tables.html
+wwwroot\Admin\build\pages\virtual-reality.html
+wwwroot\Admin\CHANGELOG.md
+wwwroot\Admin\package.json
+wwwroot\Admin\package-lock.json
+wwwroot\Admin\postcss.config.js
+wwwroot\Admin\README.md
+wwwroot\Admin\src\styles.css
+wwwroot\Admin\tailwind.config.js
 wwwroot\assets\dist\Admin\nav.js
 wwwroot\assets\dist\contact.js
 wwwroot\assets\dist\david-ai.min.js
@@ -49,6 +243,9 @@ wwwroot\assets\src\service_home.css
 wwwroot\assets\src\style.css
 wwwroot\assets\src\style_home.css
 wwwroot\assets\tailwind.config.js
+wwwroot\Images\2e9e9f3e-3c11-4049-a36b-1d4e1a8a94ba.jpg
+wwwroot\Images\400c44e8-8390-4e5d-973d-5402839be9fc.png
+wwwroot\Images\46e8af2e-7bab-421c-af2c-4222008c21d3.png
 wwwroot\Images\491da01e-89a0-461d-a32b-987f036179f2.png
 wwwroot\Images\66b25a2f-a726-44ba-961d-a08d42925e2b.png
 wwwroot\Images\6af8fd36-4590-4862-918e-13a959d62a48.png
